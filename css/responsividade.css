@@ -1,0 +1,29 @@
+@media (max-width:768px){
+    .display-2 {
+        font-size: 4.5rem;
+    
+      }
+}
+
+@media (max-width:550px){
+    .display-2 {
+        font-size: 3.5rem;
+    
+      }
+}
+
+@media (max-width:420px){
+    .display-2 {
+        font-size: 2.5rem;
+    
+      }
+}
+
+@media (max-width:370px){
+    .subtitle h4 {
+        font-size: 1rem;
+      }
+}
+
+
+ 

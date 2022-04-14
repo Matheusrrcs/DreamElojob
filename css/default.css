@@ -1,0 +1,51 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    height: 100%;
+    width: 100%;
+
+}
+body{
+    height: 100%;
+    width: 100%;
+   overflow-x: hidden;
+   font-family: 'Roboto', sans-serif;
+   background-color: #f4f4f4;
+}
+
+.navbar{
+    border-bottom: 1px solid #808080ad ;
+    padding-bottom: 0;
+    padding-top: 0;
+  
+}
+
+.navbar.scrolled{
+    background-color: rgba(0, 0, 0, 0.658);
+    border-bottom: none ;
+    transition:  0.2s all ease-in-out;
+}
+
+.nav-link,.btn{
+    color: white;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+  
+}
+
+.btn{
+    background: linear-gradient(to bottom ,#00DAE0,#007ED0);
+    border-radius: 7px;
+    padding: .625rem 1.625rem;
+    text-align: center;
+    margin-left: 1rem;
+}
+
+
+.navbar-brand img{
+    width: 100px;
+    height: 100px;
+}

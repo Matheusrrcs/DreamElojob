@@ -31,7 +31,7 @@ body{
 
 .nav-link,.btn{
     color: white;
-    font-size: 1.25rem;
+    font-size: 1rem;
     text-transform: uppercase;
   
 }
@@ -39,13 +39,25 @@ body{
 .btn{
     background: linear-gradient(to bottom ,#00DAE0,#007ED0);
     border-radius: 7px;
-    padding: .625rem 1.625rem;
+    padding: .6rem 1.5rem;
+    height: 3rem;
     text-align: center;
     margin-left: 1rem;
+    transition: .2s all ease-in-out;
 }
-
+ 
+.btn:hover{
+    color:white;
+    transform: scale(1.1);
+    box-shadow: 1px 2px 6px #007ED0;
+}
 
 .navbar-brand img{
     width: 100px;
     height: 100px;
+}
+.fa-solid{
+    color: white;
+   font-size: 1.4rem;
+   
 }

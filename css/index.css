@@ -41,9 +41,8 @@
     font-weight: 700;
  }
  .subtitle h4{
-    font-size: 1.25rem;
+    font-size: 1rem;
  }
-
 
  /* animação do mouse scroll */
 
@@ -229,9 +228,10 @@
 
 .section-boost{
   width: 100%;
-  height: 100%;
+  height: auto;
   text-align: center;
   background-color: #f4f4f4;
+ 
 }
  
 .title-boost{
@@ -245,6 +245,13 @@
   width: 2px;
   background-image: linear-gradient(to bottom ,#00DAE0,#007ED0);
   height: 100px;
+}
+.line.dois{
+  width: 2px;
+  background-image: linear-gradient(to bottom ,#00DAE0,#007ED0);
+  height: 100px;
+ margin-right:2rem;
+ margin-top: 3rem;
 }
 .divider-line{
   margin: 10px auto;
@@ -263,39 +270,75 @@ background-image: linear-gradient(to right ,#00DAE0,#007ED0);
   border-bottom: 2px solid black;
 }
 
-.section-boost .container{
-  width: 100%;
-  height: 100%;
+.section-boost .container.img-fluid{
+  width: auto;
+  height: 30rem;
+  /* padding-bottom: 216px; */
+  background: rgba(0, 0, 0, 0) url(../img/backgrounds/Background-voliber.png) no-repeat scroll center bottom / 650px 328px;
  
-  background: rgba(0, 0, 0, 0) url(../img/backgrounds/Background-voliber.png) no-repeat scroll center bottom / 750px 468px;
+padding-bottom: 216px;
 }
 
 .section-boost .row{
   padding-top: 3rem;
 }
+.section-boost .row.dois{
+  padding-top: 5rem;
+}
 .section-boost .col-lg-6.um{
   display: flex;
   justify-content: right;
-  padding-right: 75px;
+  padding-right: 9rem;
+}
+.section-boost .col-lg-6.dois{
+ 
+  padding-left: 5rem;
 }
 
- 
+
+.section-boost .col-lg-6.tres{
+  display: flex;
+  flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding-right:14rem;
+}
+.section-boost .col-lg-6.quatro{
+  display: flex;
+  flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding-left:19rem;
+}
 
 .body-boost.um{
- width: 15rem;
+  max-width: 15rem;
  height: 100%;
  
- text-align:center;
+ text-align:left;
  margin-left: 5rem;
 }
 
 .body-boost.dois{
-  width: 22rem;
+  max-width: 22rem;
   height: 100%;
   
-  text-align:center;
-  margin-left: 5rem;
+  text-align: left;
+  margin-left: 7rem;
  }
+
+ .body-boost.tres{
+  max-width: 15rem;
+  height: 100%;
+ text-align:left;
+
+ }
+ .body-boost.quatro{
+  max-width: 17rem;
+  height: 100%;
+   text-align: left;
+ }
+ 
 .body-boost.um p{
  text-align: left;
 }
@@ -303,4 +346,103 @@ background-image: linear-gradient(to right ,#00DAE0,#007ED0);
 .icone-boost img{
   width: 34px;
   height: 34px;
+}
+
+
+  .section-cards{ 
+  width: 100%;
+  height:auto;
+  background:url(../img/backgrounds/Background-all-skins.jpg) ;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+ position: relative;
+ z-index: 1;
+ color: white;
+ text-align: center;
+
+}  
+
+.section-cards::after{
+  content: "";
+  position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+background-color: black;
+opacity: 0.8;
+z-index: -1;
+
+}
+
+.body-card{
+  display: flex;
+  flex-direction: row;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+.body-card.dois{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.title-body-card{
+display: flex;
+padding-left: 1rem;
+flex-direction: column;
+justify-content: center;
+ width: 15rem;
+text-align: start;
+}
+
+.title-body-card.dois{
+  display: flex;
+padding-right: 1rem;
+flex-direction: column;
+justify-content: center;
+ width: 15rem;
+text-align: end;
+}
+.title-cards{
+  display: flex;
+  width: 100%;
+  height: auto;
+  padding-top: 1.2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-cards h1 {
+  padding-top: 1rem;
+  font-size: 2rem;
+}
+
+.img-card img{
+  max-width:280px;
+}
+
+.btn-card{
+  border: 2px solid  #007ED0 ;
+  border-radius: 7px;
+  padding: .6rem 1.5rem;
+  color: white;
+  height: 3rem;
+  text-align: center;
+  width: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.btn-card:hover{
+ 
+  color: white;
+  text-decoration: none;
+  background: linear-gradient(to bottom ,#00DAE0,#007ED0);
+ 
+}
+.btn-card.dois{
+  margin-left: 3rem;
 }

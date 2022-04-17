@@ -80,7 +80,7 @@ $(function () {
         console.log($navT.attr("aria-expanded"))
       
         if ($navT.attr("aria-expanded") === "false") {
-            $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+            $nav.toggleClass('scrolled', $(this).scrollTop() > 5);
         }
 
         if (window.screen.availWidth < 700) {

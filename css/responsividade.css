@@ -6,6 +6,7 @@
   .section-boost .col-lg-6.quatro{
    padding-right: 0;
   }
+
 }
 
 @media(max-width:991px){
@@ -19,6 +20,10 @@
     padding-bottom: 1rem;
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+  .body-card,.body-card.dois{
+    padding-top: 1rem;
+  padding-bottom: 1rem;
   }
   .section-boost .container.img-fluid{ 
     height: auto;

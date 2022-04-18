@@ -379,8 +379,7 @@ z-index: -1;
 .body-card{
   display: flex;
   flex-direction: row;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  
 }
 .body-card.dois{
   display: flex;

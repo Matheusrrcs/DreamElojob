@@ -43,12 +43,36 @@
     margin-top: .4rem;
 }
 
+.section-aval .col-lg-6{
+  display: flex;
+  justify-content: center !important;
+}
+
+
 }
 
 @media (max-width:768px) {
     .display-2 {
         font-size: 4.5rem;
     
+      }
+      .body-aval {
+  
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .body-aval-img{
+        display: flex;
+       
+        justify-content: center;
+        align-items: center;
+      }
+      .body-aval-img img{
+       margin: 0;
+       margin-bottom: .5rem;
       }
 }
 

@@ -61,3 +61,41 @@ body{
    font-size: 1.4rem;
    
 }
+
+
+.page-footer{
+    background-color: #000000;
+    color: white;
+    padding:4rem 0 1rem 0 !important;
+  }
+  .footer-item{
+    margin-bottom: 30px;
+    
+  }
+  .list-unstyled i{
+    font-size: 2rem;
+  }
+  .footer-item li a:hover{
+     text-decoration: none;
+     background-image: linear-gradient(to bottom ,#00DAE0,#007ED0);
+     -webkit-background-clip: text; 
+   -webkit-text-fill-color: transparent;
+     background-clip: text; 
+  }
+  .footer-copyright a:hover{
+   text-decoration: none;
+   background-image: linear-gradient(to bottom ,#00DAE0,#007ED0);
+   -webkit-background-clip: text; 
+ -webkit-text-fill-color: transparent;
+   background-clip: text;
+  }
+  .textFooter{
+    font-size: 10px;
+  line-height: 15px;
+  text-align: left;
+   
+  }
+  footer a{
+      color:white;
+  }
+ 

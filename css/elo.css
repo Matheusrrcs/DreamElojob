@@ -1,3 +1,5 @@
+
+
 .section-header-elo {
     background: url(../img/backgrounds/Background-elo.png);
     background-position: center;
@@ -5,7 +7,7 @@
     height: 20rem;
     position: relative;
     z-index: 0;
-    
+  
 }
 
 .section-header-elo::after{
@@ -33,6 +35,7 @@
 .section-header-elo .title{
     padding-top: 8rem;
     color: white;
+    
 }
  
 
@@ -46,6 +49,7 @@
     color: rgb(0, 0, 0);
     padding-bottom: 3rem;
     padding-top: 2rem;
+     
 }
  
 
@@ -55,11 +59,13 @@
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .body-elo-title{
     display: grid;
     justify-content: center;
+  
 }
 
 .numero-title{
@@ -135,7 +141,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-     
+      
       text-align: center;
  
       
@@ -160,6 +166,7 @@
       z-index: 1;
       padding-bottom: 3rem;
       padding-top: 2rem;
+      
   }
   .section-info::after{
       content: "";

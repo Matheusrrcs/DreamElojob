@@ -53,6 +53,17 @@
   justify-content: center !important;
 }
 
+.section-calc{
+  background:  url(../img/backgrounds/Background-calc.svg) ;
+  width: 100%;
+  height: auto;
+  background-size:cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  color: rgb(0, 0, 0);
+  padding-bottom: 3rem;
+  padding-top: 2rem;
+}
 
 }
 

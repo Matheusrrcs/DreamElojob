@@ -214,7 +214,7 @@
 
 .bottom{
   position: absolute;
-  bottom: -1rem;
+  bottom: 0rem;
   left: 0;
   right: 0;
   border-top: none;
@@ -482,14 +482,9 @@ text-align: end;
   flex-direction: row;
   border-radius: 15px;
   padding-bottom: 2rem;
-  cursor: default;
-  transition: .3s all ease-in-out;
+
 }
 
-.body-aval:hover{
-  cursor: default;
-  transform: scale(1.1);
-}
  
 
 .body-aval-img img{
@@ -532,7 +527,7 @@ text-align: end;
 .corpoFaq{
   position: absolute;
   min-width: 100%;
-  min-height: 90rem;
+  min-height: 86rem;
   height: auto;
  z-index: -1;
  
@@ -617,11 +612,4 @@ text-align: end;
   margin-bottom: 0;
 }
 
- .whats{
-   color:#007ED0;
-   font-weight: bolder;
-   cursor: pointer;
- }
- .whats:hover{
-    text-decoration: none; 
- }
+ 

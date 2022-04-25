@@ -40,10 +40,10 @@
  
 
 .section-calc{
-    background:  url(../img/backgrounds/Background-calc.svg) ;
+    background:  url(../img/backgrounds/Background-calc.png) ;
     width: 100%;
     height: auto;
-    background-size:contain;
+    background-size:cover;
     background-position:center;
     background-repeat: no-repeat;
     color: rgb(0, 0, 0);

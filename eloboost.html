@@ -253,7 +253,7 @@
       <div class="title-calc pb-5">
         <div class="line mt-2"></div>
         <div class="container">
-          <h2>
+          <h2 id="title">
             ELO <span class="textoColorido"> BOOST </span>
           </h2>
           <small> ACEITAMOS TODOS OS TIPO DE CARTÃO E DIVIDIMOS EM ATÉ 12X ATRAVÉS DO PICPAY OU MERCADO PAGO</small>
@@ -327,6 +327,7 @@
                   </div>
 
                 </div>
+                
 
               </div>
 
@@ -403,14 +404,46 @@
           </div>
 
         </div>
-        <div class="row price">
-          <p class="display-4 text-black text-uppercase valor" id="valor"><small>POR:</small> R$&nbsp;65,00 </p>
-          <div class=" comprarr">
+        <div class="row price" id="contentEloFinal">
+          <div class="container">
+            <p class="display-4 text-black text-uppercase valor" id="valor"><small>POR:</small> R$&nbsp;65,00 </p>
+        
+   
+          </div>
+          
+   
+        
+          <div class=" comprar">
             <a href="" class="btn">COMPRAR</a>
           </div>
           
      
         </div>
+
+     <div class="container">
+       <div class="row d-flex justify-content-center">
+        <div class="alert alert-danger d-none" id="alert">
+     
+          Por favor, certifique-se de que o elo desejado é maior do que o elo inicial escolhido
+      </div>
+         
+     
+       </div>
+     </div>
+    
+
+        <div id="load" class="d-none"> 
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin: auto; background: transparente none repeat scroll 0% 0%; display: block;" width="200px" height="200px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+            <circle cx="50" cy="50" r="32" stroke-width="8" stroke="#00dae0" stroke-dasharray="50.26548245743669 50.26548245743669" fill="none" stroke-linecap="round">
+              <animateTransform attributeName="transform" type="rotate" dur="1s" repeatCount="indefinite" keyTimes="0;1" values="0 50 50;360 50 50"></animateTransform>
+            </circle>
+            <circle cx="50" cy="50" r="23" stroke-width="8" stroke="#007ed0" stroke-dasharray="36.12831551628262 36.12831551628262" stroke-dashoffset="36.12831551628262" fill="none" stroke-linecap="round">
+              <animateTransform attributeName="transform" type="rotate" dur="1s" repeatCount="indefinite" keyTimes="0;1" values="0 50 50;-360 50 50"></animateTransform>
+            </circle>
+            </svg>
+        </div>
+
+
         <div class="nota ">
           <p> <strong>Nota: </strong>  Wild Rift e Valorant são negociados pelo whatsapp</p>
         </div>
@@ -606,7 +639,7 @@
   <script src="https://kit.fontawesome.com/8e4ad95b91.js" crossorigin="anonymous"></script>
 
   <script src="js/index.js"></script>
- <script src="js/img-elos.js"></script>
+ <script src="js/boost.js"></script>
 
 </body>
 

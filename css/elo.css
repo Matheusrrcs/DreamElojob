@@ -41,6 +41,7 @@
 
 .section-calc{
     background:  url(../img/backgrounds/Background-calc.png) ;
+ 
     width: 100%;
     height: auto;
     background-size:cover;
@@ -81,7 +82,7 @@
 }
 .img-body-elo img{ 
      
-    max-height: 300px;
+    max-height: 200px;
 }
 
 .body-elo-select{
@@ -179,3 +180,12 @@
       opacity: .8;
      z-index:   -1;
   }
+
+  .alert{
+      display: flex;
+      justify-content: center;
+   margin-top: 2rem;
+   margin-bottom: 2rem;
+  
+  }
+ 

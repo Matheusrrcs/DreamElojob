@@ -77,8 +77,7 @@ $(function () {
         var $sect = $(".sect")
         var $navT = $(".navbar-toggler")
        
-        console.log($navT.attr("aria-expanded"))
-      
+       
         if ($navT.attr("aria-expanded") === "false") {
             $nav.toggleClass('scrolled', $(this).scrollTop() > 5);
         }

@@ -15,6 +15,12 @@
     margin: 0;
     text-align: center;
   }
+   .nav-item i{
+   padding: 0;
+  }
+  .icons-nav{
+   padding-bottom: 1rem;
+  }
   .section-boost .col-lg-6.um,.section-boost .col-lg-6.dois,.section-boost .col-lg-6.tres,.section-boost .col-lg-6.quatro{
     padding: 0;
     padding-bottom: 1rem;
@@ -44,7 +50,7 @@
   }
   .btn.praCima{
     margin-left: 0;
-    margin-bottom: 2rem;  
+    margin-bottom: 1rem;  
     margin-top: .4rem;
 }
 

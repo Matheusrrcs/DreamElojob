@@ -397,6 +397,7 @@ text-align: start;
 
 .title-body-card.dois{
   display: flex;
+  padding-left: 0;
 padding-right: 1rem;
 flex-direction: column;
 justify-content: center;
@@ -482,10 +483,14 @@ text-align: end;
   flex-direction: row;
   border-radius: 15px;
   padding-bottom: 2rem;
-
+ cursor: default;
+ transition: 0.2s all ease-in-out;
 }
 
- 
+ .body-aval:hover{
+
+   transform:scale(1.1);
+ }
 
 .body-aval-img img{
   border: 3px solid  #ffffff ;

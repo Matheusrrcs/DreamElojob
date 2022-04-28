@@ -148,33 +148,33 @@ function mudaPreçoLOL() {
 
      const duoboost = {
           ferro4: 0,
-          ferro3: 15,
-          ferro2: 30,
-          ferro1: 45,
-          bronze4: 65,
-          bronze3: 85,
-          bronze2: 105,
-          bronze1: 125,
-          prata4: 150,
-          prata3: 175,
-          prata2: 200,
-          prata1: 225,
-          ouro4: 255,
-          ouro3: 285,
-          ouro2: 315,
-          ouro1: 345,
-          platina4: 385,
-          platina3: 425,
-          platina2: 465,
-          platina1: 505,
-          diamante4: 565,
-          diamante3: 645,
-          diamante2: 745,
-          diamante1: 895,
-          mestre4: 1095,
-          mestre3: 1095,
-          mestre2: 1095,
-          mestre1: 1095
+    ferro3: 15,
+    ferro2: 30,
+    ferro1: 45,
+    bronze4: 60,
+    bronze3: 80,
+    bronze2: 100,
+    bronze1: 120,
+    prata4: 143,
+    prata3: 166,
+    prata2: 189,
+    prata1: 212,
+    ouro4: 235,
+    ouro3: 262,
+    ouro2: 289,
+    ouro1: 316,
+    platina4: 343,
+    platina3: 383,
+    platina2: 423,
+    platina1: 463,
+    diamante4: 503,
+    diamante3: 603,
+    diamante2: 723,
+    diamante1: 903,
+    mestre4: 1153,
+    mestre3: 1153,
+    mestre2: 1153,
+    mestre1: 1153
      }
 
      if (trataNome("title") == "eloboost") {
@@ -185,6 +185,7 @@ function mudaPreçoLOL() {
           calculaPreco(duoboost)
            
      }
+ 
 
 
 

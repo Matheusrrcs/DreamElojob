@@ -22,6 +22,11 @@
     z-index: -1;
 }
 
+.obs{
+    
+    display: flex;
+    justify-content: center;
+}
 
 .section-header-elo .container{
     display: flex;

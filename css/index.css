@@ -443,14 +443,7 @@ text-align: end;
   background: linear-gradient(to bottom ,#00DAE0,#007ED0);
  
 }
-.support-button .support{
-   background: linear-gradient(to bottom ,#00DAE0,#007ED0);
-  display: flex;
-  flex-direction: row;
-  padding: 1rem;color: black;
-  border-radius: 4px;
-  box-shadow: 5px 5px 15px 5px #00000094;
-}
+ 
 .btn-card.dois{
   margin-left: 3rem;
 }
@@ -463,7 +456,12 @@ text-align: end;
   background-repeat: no-repeat;
 }
  
+.support-button{
+  color: #000;
+ text-decoration: underline;
+} 
  
+
 .section-aval .col-lg-6{
   padding-bottom:3rem;
 }

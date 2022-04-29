@@ -104,7 +104,7 @@
    
       }
       .section-header-elo .title h1{
-        font-size:2rem;
+        font-size:2.5rem;
       }
       .body-card, .body-card.dois,.title-body-card,.title-body-card.dois {
         display: flex;
@@ -127,7 +127,7 @@
     
       }
       .section-header-elo .title h1{
-        font-size:1.5rem;
+        font-size:2rem;
       }
    
 }

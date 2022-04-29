@@ -103,7 +103,9 @@
         height:0;
    
       }
-
+      .section-header-elo .title h1{
+        font-size:2rem;
+      }
       .body-card, .body-card.dois,.title-body-card,.title-body-card.dois {
         display: flex;
         flex-direction: column;
@@ -124,6 +126,10 @@
         font-size: 2.5rem;
     
       }
+      .section-header-elo .title h1{
+        font-size:1.5rem;
+      }
+   
 }
 
 @media (max-width:370px){

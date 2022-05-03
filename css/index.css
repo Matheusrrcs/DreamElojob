@@ -457,7 +457,7 @@ text-align: end;
 }
  
 .support-button{
-  color: #000;
+  color: rgb(255, 255, 255);
  text-decoration: underline;
 } 
  
@@ -585,6 +585,9 @@ text-align: end;
 .card.border-0.wow.fadeInUp {
   border-radius:10px;
   
+}
+.insta a{
+color: #007ED0;
 }
 
 .faq-accordian .card .card-header:hover{

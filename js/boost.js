@@ -1,13 +1,33 @@
 $("#ligaAtual").change(() => {
 
      $("#imgAtual").attr('src', `img/elos/${ligaAtual.value}.webp`)
+
+
+            // se for mestre, desafiante ou grão mestre ele tira o select de divisão
+  if (ligaAtual.value == "mestre" || ligaAtual.value == "graomestre" || ligaAtual.value == "desafiante" || ligaAtual.value == "radiante") {
+     $("#boxDivisaoAtual").addClass('d-none')
+   }
+   else {
+     $("#boxDivisaoAtual ").removeClass('d-none')
+   }
+
      AddLoad()
 })
 
 $("#ligaDesejada").change(() => {
 
      $("#imgDesejada").attr('src', `img/elos/${ligaDesejada.value}.webp`)
-     AddLoad()
+   
+
+       // se for mestre, desafiante ou grão mestre ele tira o select de divisão
+  if (ligaDesejada.value == "mestre" || ligaDesejada.value == "graomestre" || ligaDesejada.value == "desafiante" || ligaDesejada.value == "radiante") {
+     $("#boxDivisaoDesejada").addClass('d-none')
+   }
+   else {
+     $("#boxDivisaoDesejada ").removeClass('d-none')
+   }
+ 
+   AddLoad()
 })
 
 
@@ -92,7 +112,7 @@ function Aviso() {
      else if (elos[`${ligaAtual}`] == elos[`${ligaDesejada}`] && divisaoAtual <= divisaoDesejada) {
           esconde()
      }
-     else if (ligaAtual == "mestre" && ligaDesejada == "mestre") {
+     else if (ligaAtual == "mestre" && ligaDesejada == "mestre" ||  ligaAtual == "graomestre" && ligaDesejada == "graomestre" || ligaAtual == "desafiante" && ligaDesejada == "desafiante") {
           esconde()
      }
      else {

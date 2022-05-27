@@ -1,0 +1,57 @@
+.titleHeader{
+    background : url(../img/backgrounds/Background-elo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 10rem;
+    width: 100%;
+   display: flex;
+   align-items: center;
+ color: white;
+   padding-top: 10rem;
+   padding-bottom: 3rem;
+   position: relative;
+   z-index: 2;
+}
+.titleHeader::after{
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.7;
+  z-index: -1;
+}
+.navbar{
+  border: none;
+}
+.link{
+  color: #000000;
+}
+
+.sticky-top p a:hover{
+   color: #000000;
+   font-weight: 700;
+   text-decoration: none;
+}
+.politicasContent{
+  background : url(../img/backgrounds/Background-calc.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: 4rem;
+    width: 100%;
+    height: auto;
+}
+
+  .politicasContent h4{
+    text-transform: uppercase;
+  font-weight: bolder;
+}
+.politicasContent  p {
+    font-weight: 300;
+}
+ 
+
+ 

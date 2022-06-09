@@ -3,11 +3,10 @@
 $("#ligaAtual").change(() => {
 
 
-
-
-  document.querySelectorAll('#imgAtual').forEach(function (item) {
-    item.src = `../imagens/elos/${ligaAtual.value}.png`;
-  })
+ 
+console.log(`../imagens/elos/${ligaAtual.value}.webp`)
+  document.getElementById('imgAtual').src = `img/elos/${ligaAtual.value}.webp`;
+ 
 
 
   AddLoad()

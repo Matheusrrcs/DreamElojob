@@ -36,9 +36,9 @@ function AddLoad() {
 function mudaPreço() {
 
     const coach = {
-        1: 25,
-        5: 125,
-        10: 200,
+        5:50,
+        10: 90,
+        15: 150,
 
     }
 

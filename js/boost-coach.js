@@ -38,7 +38,7 @@ function mudaPreço() {
     const coach = {
         5:50,
         10: 90,
-        15: 150,
+        15: 130,
 
     }
 

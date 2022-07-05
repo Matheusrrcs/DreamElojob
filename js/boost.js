@@ -3,13 +3,13 @@ $("#ligaAtual").change(() => {
      $("#imgAtual").attr('src', `img/elos/${ligaAtual.value}.webp`)
 
 
-            // se for mestre, desafiante ou grão mestre ele tira o select de divisão
-  if (ligaAtual.value == "mestre" || ligaAtual.value == "graomestre" || ligaAtual.value == "desafiante" || ligaAtual.value == "radiante") {
-     $("#boxDivisaoAtual").addClass('d-none')
-   }
-   else {
-     $("#boxDivisaoAtual ").removeClass('d-none')
-   }
+     // se for mestre, desafiante ou grão mestre ele tira o select de divisão
+     if (ligaAtual.value == "mestre" || ligaAtual.value == "graomestre" || ligaAtual.value == "desafiante" || ligaAtual.value == "radiante") {
+          $("#boxDivisaoAtual").addClass('d-none')
+     }
+     else {
+          $("#boxDivisaoAtual ").removeClass('d-none')
+     }
 
      AddLoad()
 })
@@ -17,21 +17,21 @@ $("#ligaAtual").change(() => {
 $("#ligaDesejada").change(() => {
 
      $("#imgDesejada").attr('src', `img/elos/${ligaDesejada.value}.webp`)
-   
 
-       // se for mestre, desafiante ou grão mestre ele tira o select de divisão
-  if (ligaDesejada.value == "mestre" || ligaDesejada.value == "graomestre" || ligaDesejada.value == "desafiante" || ligaDesejada.value == "radiante") {
-     $("#boxDivisaoDesejada").addClass('d-none')
-   }
-   else {
-     $("#boxDivisaoDesejada ").removeClass('d-none')
-   }
- 
-   AddLoad()
+
+     // se for mestre, desafiante ou grão mestre ele tira o select de divisão
+     if (ligaDesejada.value == "mestre" || ligaDesejada.value == "graomestre" || ligaDesejada.value == "desafiante" || ligaDesejada.value == "radiante") {
+          $("#boxDivisaoDesejada").addClass('d-none')
+     }
+     else {
+          $("#boxDivisaoDesejada ").removeClass('d-none')
+     }
+
+     AddLoad()
 })
 
 
- 
+
 
 // quando mudar a divisão atual
 $("#divisaoAtual").change(() => {
@@ -56,7 +56,7 @@ function AddLoad() {
 
      function Load() {
           load.classList.add("d-none")
-      
+
           mudaPreçoLOL()
 
 
@@ -112,7 +112,7 @@ function Aviso() {
      else if (elos[`${ligaAtual}`] == elos[`${ligaDesejada}`] && divisaoAtual <= divisaoDesejada) {
           esconde()
      }
-     else if (ligaAtual == "mestre" && ligaDesejada == "mestre" ||  ligaAtual == "graomestre" && ligaDesejada == "graomestre" || ligaAtual == "desafiante" && ligaDesejada == "desafiante") {
+     else if (ligaAtual == "mestre" && ligaDesejada == "mestre" || ligaAtual == "graomestre" && ligaDesejada == "graomestre" || ligaAtual == "desafiante" && ligaDesejada == "desafiante") {
           esconde()
      }
      else {
@@ -121,7 +121,7 @@ function Aviso() {
 
 
 }
- 
+
 
 
 // manda os preços do league of legends
@@ -156,7 +156,7 @@ function mudaPreçoLOL() {
           mestre3: 598,
           mestre2: 598,
           mestre1: 598,
-          graomestre4: 1098 ,
+          graomestre4: 1098,
           graomestre3: 1098,
           graomestre2: 1098,
           graomestre1: 1098,
@@ -168,44 +168,44 @@ function mudaPreçoLOL() {
 
      const duoboost = {
           ferro4: 0,
-    ferro3: 15,
-    ferro2: 30,
-    ferro1: 45,
-    bronze4: 60 ,
-    bronze3: 77,
-    bronze2: 94,
-    bronze1: 111,
-    prata4: 128,
-    prata3: 148,
-    prata2: 168,
-    prata1: 188,
-    ouro4: 208,
-    ouro3: 233,
-    ouro2: 258,
-    ouro1: 283,
-    platina4: 308,
-    platina3: 343,
-    platina2: 378,
-    platina1: 413,
-    diamante4: 448,
-    diamante3: 538,
-    diamante2: 648,
-    diamante1: 788,
-    mestre4: 968,
-    mestre3: 968,
-    mestre2: 968,
-    mestre1: 968
+          ferro3: 15,
+          ferro2: 30,
+          ferro1: 45,
+          bronze4: 60,
+          bronze3: 77,
+          bronze2: 94,
+          bronze1: 111,
+          prata4: 128,
+          prata3: 148,
+          prata2: 168,
+          prata1: 188,
+          ouro4: 208,
+          ouro3: 233,
+          ouro2: 258,
+          ouro1: 283,
+          platina4: 308,
+          platina3: 343,
+          platina2: 378,
+          platina1: 413,
+          diamante4: 448,
+          diamante3: 538,
+          diamante2: 648,
+          diamante1: 788,
+          mestre4: 968,
+          mestre3: 968,
+          mestre2: 968,
+          mestre1: 968
      }
 
      if (trataNome("title") == "eloboost") {
           calculaPreco(eloboost)
-         
+
      }
      if (trataNome("title") == "duoboost") {
           calculaPreco(duoboost)
-           
+
      }
- 
+
 
 
 
@@ -221,15 +221,15 @@ function trataNome(id) {
 //faz o calculo do preço
 function calculaPreco(tipoJogo) {
 
-    
+
      let atual = document.getElementById("ligaAtual").value + document.getElementById("divisaoAtual").value
      let desejada = document.getElementById("ligaDesejada").value + document.getElementById("divisaoDesejada").value
 
      let resultado
-   
+
 
      resultado = tipoJogo[`${desejada}`] - tipoJogo[`${atual}`]
- 
+
 
      document.getElementById("valor").innerHTML = `<small>POR:</small> ${moedaBrasil(resultado)}`
 }

@@ -1,7 +1,7 @@
 $("#comprar").click((e) => {
     e.preventDefault();
     let titles = document.getElementById("title").textContent.replaceAll(" ", "").trim()
- 
+
     if (titles == "MD10" || titles == "MD5") {
         md10()
     }
@@ -56,7 +56,7 @@ function eloboostDuo() {
 
 
     if ((lga.toLowerCase() == 'mestre' || lga.toLowerCase() == 'graomestre' || lga.toLowerCase() == 'desafiante' || lga.toLowerCase() == "radiante") && (lgd.toLowerCase() == 'mestre' || lgd.toLowerCase() == 'graomestre' || lgd.toLowerCase() == 'desafiante' || lgd.toLowerCase() == "radiante")) {
-       
+
         if (lga.toLocaleLowerCase() == 'graomestre') {
             lga = "Grão Mestre"
         }
@@ -106,6 +106,7 @@ function eloboostDuo() {
     }
 
     var url = `https://${type}.whatsapp.com/send?1=pt_BR&phone=557198726-2223&text=`.concat(text);
+    gtag_report_conversion(window.location.href)
 
     window.open(url);
 }
@@ -149,6 +150,7 @@ function md10() {
     text = 'Olá,%20estou%20no%20site%20e%20quero%20' + titles + '%20de ' + ch + "%20 " + value + '%20. O%20meu%20elo%20era%20 ' + lga
 
     var url = `https://${type}.whatsapp.com/send?1=pt_BR&phone=557198726-2223&text=`.concat(text);
+    gtag_report_conversion(window.location.href)
 
     window.open(url);
 }
@@ -185,15 +187,16 @@ function coach() {
     } else {
         type = "api"
     }
-if(lga == 1){
-    text = 'Olá,%20estou%20no%20site%20e%20quero%20' + titles + '%20de ' + ch + "%20de " + lga + " partida%20" + value
+    if (lga == 1) {
+        text = 'Olá,%20estou%20no%20site%20e%20quero%20' + titles + '%20de ' + ch + "%20de " + lga + " partida%20" + value
 
-}
- else{
-    text = 'Olá,%20estou%20no%20site%20e%20quero%20' + titles + '%20de ' + ch + "%20de " + lga + " partidas%20" + value
+    }
+    else {
+        text = 'Olá,%20estou%20no%20site%20e%20quero%20' + titles + '%20de ' + ch + "%20de " + lga + " partidas%20" + value
 
- }
+    }
     var url = `https://${type}.whatsapp.com/send?1=pt_BR&phone=557198726-2223&text=`.concat(text);
+    gtag_report_conversion(window.location.href)
 
     window.open(url);
 }

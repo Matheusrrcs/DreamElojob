@@ -251,7 +251,7 @@ function desconto(tipoJogo) {
      descontoFinal = resultado / 0.8
 
 
-     document.getElementById("desconto").innerHTML = `<small>DE:</small> ${moedaBrasil(descontoFinal)}`
+     document.getElementById("desconto").innerHTML = `<small>DE:  ${moedaBrasil(descontoFinal)} </small>`
 }
 
 

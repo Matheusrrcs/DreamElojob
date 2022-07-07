@@ -4,14 +4,17 @@ $("#comprar").click((e) => {
 
     if (titles == "MD10" || titles == "MD5") {
         md10()
+        return gtag_report_conversion(window.location.href)
     }
     else if (titles == "COACH") {
         coach()
+        return gtag_report_conversion(window.location.href)
     }
     else {
         eloboostDuo()
+        return gtag_report_conversion(window.location.href)
     }
-
+    return gtag_report_conversion(window.location.href)
 
 })
 
@@ -106,11 +109,11 @@ function eloboostDuo() {
     }
 
     var url = `https://${type}.whatsapp.com/send?1=pt_BR&phone=5571987262223&text=`.concat(text);
-  
- 
+
+
 
     window.open(url);
-      gtag_report_conversion(window.location.href)
+
 }
 
 function md10() {
@@ -152,10 +155,9 @@ function md10() {
     text = 'Olá,%20estou%20no%20site%20e%20quero%20' + titles + '%20de ' + ch + "%20 " + value + '%20. O%20meu%20elo%20era%20 ' + lga
 
     var url = `https://${type}.whatsapp.com/send?1=pt_BR&phone=5571987262223&text=`.concat(text);
- 
+
 
     window.open(url);
-      gtag_report_conversion(window.location.href)
 }
 
 function coach() {
@@ -199,10 +201,9 @@ function coach() {
 
     }
     var url = `https://${type}.whatsapp.com/send?1=pt_BR&phone=5571987262223&text=`.concat(text);
-  
+
 
     window.open(url);
-      gtag_report_conversion(window.location.href)
 }
 
 function id(id) {

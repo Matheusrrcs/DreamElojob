@@ -1,5 +1,3 @@
-
-
 .section-header-elo {
     background: url(../img/backgrounds/Background-elo.png);
     background-position: center;
@@ -7,10 +5,10 @@
     height: 20rem;
     position: relative;
     z-index: 0;
-  
+
 }
 
-.section-header-elo::after{
+.section-header-elo::after {
     content: "";
     position: absolute;
     top: 0;
@@ -22,13 +20,13 @@
     z-index: -1;
 }
 
-.obs{
-    
+.obs {
+
     display: flex;
     justify-content: center;
 }
 
-.section-header-elo .container{
+.section-header-elo .container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -37,29 +35,29 @@
     text-align: center;
 }
 
-.section-header-elo .title{
+.section-header-elo .title {
     padding-top: 8rem;
     color: white;
-    
-}
- 
 
-.section-calc{
-    background:  url(../img/backgrounds/Background-calc.png) ;
- 
+}
+
+
+.section-calc {
+    background: url(../img/backgrounds/Background-calc.png);
+
     width: 100%;
     height: auto;
-    background-size:cover;
-    background-position:center;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     color: rgb(0, 0, 0);
     padding-bottom: 3rem;
     padding-top: 2rem;
-     
-}
- 
 
-.title-calc{
+}
+
+
+.title-calc {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -68,29 +66,31 @@
     text-transform: uppercase;
 }
 
-.body-elo-title{
+.body-elo-title {
     display: grid;
     justify-content: center;
-  
+
 }
 
-.numero-title{
-    background: linear-gradient(to bottom ,#000000,#007ED0);
-    border-radius:22px;
+.numero-title {
+    background: linear-gradient(to bottom, #000000, #007ED0);
+    border-radius: 22px;
     color: white;
     width: 2px;
     height: 2px;
     padding: .38em .95em .29em;
 }
+
 .img-body-elo {
     text-align: center;
 }
-.img-body-elo img{ 
-     
+
+.img-body-elo img {
+
     max-height: 200px;
 }
 
-.body-elo-select{
+.body-elo-select {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -98,22 +98,23 @@
     flex-direction: center;
 }
 
-.body-elo-select .form{
+.body-elo-select .form {
     max-width: 220px;
-      
+
 }
 
-.form-group select{
-   height: 3.5rem;
-   border-top-right-radius: 10px;
-   border-bottom-right-radius: 10px;
-  
-}
-.bgk-icon-select{
-
-    background: linear-gradient(to bottom ,#000000,#007ED0);
+.form-group select {
     height: 3.5rem;
-    display:flex;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+}
+
+.bgk-icon-select {
+
+    background: linear-gradient(to bottom, #000000, #007ED0);
+    height: 3.5rem;
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 5rem;
@@ -121,77 +122,86 @@
     border-bottom-left-radius: 10px;
 }
 
-.icon-sel{
+.icon-sel {
     display: flex;
     flex-direction: row;
-   align-items: center;
-  
+    align-items: center;
+
 }
 
 #valor small {
     font-size: 20px;
-  }
+}
 
-  .row.price{
-      display: flex;
-      justify-content: center;
-      
-      flex-direction: column;
-      text-align: center;
-   
-     height: 220px;
-  }
- 
-  .nota {
-     
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      
-      text-align: center;
- 
-      
-  }
-  .nota p{
-      width: 30rem;
-      border: 1px solid black;
-      margin: 0;
-      padding: 1rem;
-      border-radius:7px;
-    
-  }
 
-  .section-info{
-      background: url(../img/backgrounds/Background-info.png);
-      background-position: center;
-      background-size: cover;
-      width: 100%;
-      height: auto;
-      color: white;
-      position: relative;
-      z-index: 1;
-      padding-bottom: 3rem;
-      padding-top: 2rem;
-      
-  }
-  .section-info::after{
-      content: "";
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      background-color: #000000;
-      opacity: .8;
-     z-index:   -1;
-  }
+#desconto {
+    font-size: 20px;
+    text-decoration: line-through;
 
-  .alert{
-      display: flex;
-      justify-content: center;
-   margin-top: 2rem;
-   margin-bottom: 2rem;
-  
-  }
- 
+}
+
+
+.row.price {
+    display: flex;
+    justify-content: center;
+
+    flex-direction: column;
+    text-align: center;
+
+    height: 220px;
+}
+
+.nota {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+
+}
+
+.nota p {
+    width: 30rem;
+    border: 1px solid black;
+    margin: 0;
+    padding: 1rem;
+    border-radius: 7px;
+
+}
+
+.section-info {
+    background: url(../img/backgrounds/Background-info.png);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    color: white;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+
+}
+
+.section-info::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    opacity: .8;
+    z-index: -1;
+}
+
+.alert {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}

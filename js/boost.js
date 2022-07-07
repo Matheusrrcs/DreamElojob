@@ -226,13 +226,34 @@ function calculaPreco(tipoJogo) {
      let desejada = document.getElementById("ligaDesejada").value + document.getElementById("divisaoDesejada").value
 
      let resultado
-
+     let resultadoFinal
 
      resultado = tipoJogo[`${desejada}`] - tipoJogo[`${atual}`]
 
+     resultadoFinal = resultado / 0.8
+
+     resultado = resultadoFinal * 0.8
 
      document.getElementById("valor").innerHTML = `<small>POR:</small> ${moedaBrasil(resultado)}`
 }
+
+// faz o desconto 
+function desconto(tipoJogo) {
+ 
+
+     let atual = document.getElementById("ligaAtual").value + document.getElementById("divisaoAtual").value
+     let desejada = document.getElementById("ligaDesejada").value + document.getElementById("divisaoDesejada").value
+
+     let resultado
+
+     resultado = tipoJogo[`${desejada}`] - tipoJogo[`${atual}`]
+
+     descontoFinal = resultado / 0.8
+
+
+     document.getElementById("desconto").innerHTML = `<small>DE:</small> ${moedaBrasil(descontoFinal)}`
+}
+
 
 
 // formata o numero para moeda brasileira

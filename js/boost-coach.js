@@ -3,11 +3,11 @@ $("#ligaAtual").change(() => {
 
 
     AddLoad()
-    if(ligaAtual.value == 1){
-      document.getElementById("obs").innerText = "OBS: Não Possui acompanhamento mensal"
+    if (ligaAtual.value == 1) {
+        document.getElementById("obs").innerText = "OBS: Não Possui acompanhamento mensal"
     }
-    else{
-        document.getElementById("obs").innerText =  "OBS: Possui acompanhamento mensal"
+    else {
+        document.getElementById("obs").innerText = "OBS: Possui acompanhamento mensal"
     }
 
 })
@@ -31,23 +31,23 @@ function AddLoad() {
     setTimeout(Load, 200);
 }
 
- 
+
 //muda os preços
 function mudaPreço() {
 
     const coach = {
-        5:50,
+        5: 50,
         10: 90,
         15: 130,
 
     }
 
     calculaPreco(coach)
-    
+    desconto(coach)
 
 }
 
- 
+
 
 // trata o nome capturado
 function trataNome(id) {
@@ -58,19 +58,40 @@ function trataNome(id) {
 function calculaPreco(tipoJogo) {
 
 
- 
+
     let atual = document.getElementById("ligaAtual").value
 
 
     let resultado
-   
+    let resultadoFinal
 
     resultado = tipoJogo[`${atual}`]
-   
+
+    resultadoFinal = resultado / 0.8
+
+    resultado = resultadoFinal * 0.8
+
     document.getElementById("valor").innerHTML = `<small>POR:</small> ${moedaBrasil(resultado)}`
 }
 
 
+function desconto(tipoJogo) {
+
+
+
+    let atual = document.getElementById("ligaAtual").value
+
+
+    let resultado
+
+
+    resultado = tipoJogo[`${atual}`]
+
+    descontoFinal = resultado / 0.8
+
+
+    document.getElementById("desconto").innerHTML = `<small>DE:  ${moedaBrasil(descontoFinal)} </small>`
+}
 // formata o numero para moeda brasileira
 function moedaBrasil(valor) {
 

@@ -110,7 +110,7 @@ function eloboostDuo() {
  
 
     window.open(url);
-    return gtag_report_conversion(window.location.href)
+      gtag_report_conversion(window.location.href)
 }
 
 function md10() {
@@ -155,7 +155,7 @@ function md10() {
  
 
     window.open(url);
-    return gtag_report_conversion(window.location.href)
+      gtag_report_conversion(window.location.href)
 }
 
 function coach() {
@@ -202,7 +202,7 @@ function coach() {
   
 
     window.open(url);
-    return gtag_report_conversion(window.location.href)
+      gtag_report_conversion(window.location.href)
 }
 
 function id(id) {

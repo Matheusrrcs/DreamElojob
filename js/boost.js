@@ -199,11 +199,11 @@ function mudaPreçoLOL() {
 
      if (trataNome("title") == "eloboost") {
           calculaPreco(eloboost)
-
+          desconto(eloboost)
      }
      if (trataNome("title") == "duoboost") {
           calculaPreco(duoboost)
-
+          desconto(duoboost)
      }
 
 

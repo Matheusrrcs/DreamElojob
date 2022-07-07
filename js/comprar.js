@@ -1,20 +1,21 @@
 $("#comprar").click((e) => {
     e.preventDefault();
     let titles = document.getElementById("title").textContent.replaceAll(" ", "").trim()
-
+    gtag_report_conversion(window.location.href)
+    
     if (titles == "MD10" || titles == "MD5") {
         md10()
-        return gtag_report_conversion(window.location.href)
+       
     }
     else if (titles == "COACH") {
         coach()
-        return gtag_report_conversion(window.location.href)
+       
     }
     else {
         eloboostDuo()
-        return gtag_report_conversion(window.location.href)
+        
     }
-    return gtag_report_conversion(window.location.href)
+    
 
 })
 

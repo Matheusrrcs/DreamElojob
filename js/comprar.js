@@ -106,6 +106,7 @@ function eloboostDuo() {
     }
 
     var url = `https://${type}.whatsapp.com/send?1=pt_BR&phone=5571987262223&text=`.concat(text);
+  
     gtag_report_conversion(window.location.href)
 
     window.open(url);

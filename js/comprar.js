@@ -107,7 +107,7 @@ function eloboostDuo() {
 
     var url = `https://${type}.whatsapp.com/send?1=pt_BR&phone=5571987262223&text=`.concat(text);
   
-    gtag_report_conversion(window.location.href)
+   return gtag_report_conversion(window.location.href)
 
     window.open(url);
 }
@@ -151,7 +151,7 @@ function md10() {
     text = 'Olá,%20estou%20no%20site%20e%20quero%20' + titles + '%20de ' + ch + "%20 " + value + '%20. O%20meu%20elo%20era%20 ' + lga
 
     var url = `https://${type}.whatsapp.com/send?1=pt_BR&phone=5571987262223&text=`.concat(text);
-    gtag_report_conversion(window.location.href)
+    return gtag_report_conversion(window.location.href)
 
     window.open(url);
 }
@@ -197,7 +197,7 @@ function coach() {
 
     }
     var url = `https://${type}.whatsapp.com/send?1=pt_BR&phone=5571987262223&text=`.concat(text);
-    gtag_report_conversion(window.location.href)
+    return gtag_report_conversion(window.location.href)
 
     window.open(url);
 }

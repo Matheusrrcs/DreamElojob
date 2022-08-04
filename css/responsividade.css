@@ -24,6 +24,12 @@
     align-items: center !important;
   }
 
+  .section-header {
+    background-size: cover;
+    background-position: calc(80% - 50px);
+    position: relative;
+  }
+
   .content-area2 {
     text-align: center;
   }

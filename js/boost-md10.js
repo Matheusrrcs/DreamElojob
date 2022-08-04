@@ -4,11 +4,12 @@ $("#ligaAtual").change(() => {
 
 
  
-console.log(`../imagens/elos/${ligaAtual.value}.webp`)
-  document.getElementById('imgAtual').src = `img/elos/${ligaAtual.value}.webp`;
- 
-
-
+if(trataNome("choice") == 'valorant'){
+  document.getElementById('imgAtual').src = `img/elos/valorant/${ligaAtual.value}.webp`;
+}
+  else{
+ document.getElementById('imgAtual').src = `img/elos/${ligaAtual.value}.webp`;
+ }
   AddLoad()
 
 

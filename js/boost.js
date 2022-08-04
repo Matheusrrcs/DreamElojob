@@ -1,37 +1,50 @@
+
+//muda a imagem quando seleciona outra nome e coloca a animação de load
+//quando mudar a liga atual
 $("#ligaAtual").change(() => {
 
-     $("#imgAtual").attr('src', `img/elos/${ligaAtual.value}.webp`)
-
-
-     // se for mestre, desafiante ou grão mestre ele tira o select de divisão
-     if (ligaAtual.value == "mestre" || ligaAtual.value == "graomestre" || ligaAtual.value == "desafiante" || ligaAtual.value == "radiante") {
-          $("#boxDivisaoAtual").addClass('d-none')
+     if (trataNome("choice") == 'valorant') {
+          document.getElementById('imgAtual').src = `img/elos/valorant/${ligaAtual.value}.webp`;
      }
      else {
-          $("#boxDivisaoAtual ").removeClass('d-none')
+          document.getElementById('imgAtual').src = `img/elos/${ligaAtual.value}.webp`;
+     }
+
+     if (ligaAtual.value == "mestre" || ligaAtual.value == "graomestre") {
+          $(".form-group#boxDivisaoAtual").addClass('d-none')
+
+     } else {
+          $(".form-group#boxDivisaoAtual").removeClass('d-none')
      }
 
      AddLoad()
+
 })
 
+//muda a imagem quando seleciona outra nome e coloca a animação de load
+// quando mudar a liga desejada 
 $("#ligaDesejada").change(() => {
 
-     $("#imgDesejada").attr('src', `img/elos/${ligaDesejada.value}.webp`)
+     if (trataNome("choice") == 'valorant') {
+          document.getElementById('imgDesejada').src = `img/elos/valorant/${ligaDesejada.value}.webp`;
+     }
+     else {
+          document.getElementById('imgDesejada').src = `img/elos/${ligaDesejada.value}.webp`;
+     }
 
 
      // se for mestre, desafiante ou grão mestre ele tira o select de divisão
      if (ligaDesejada.value == "mestre" || ligaDesejada.value == "graomestre" || ligaDesejada.value == "desafiante" || ligaDesejada.value == "radiante") {
-          $("#boxDivisaoDesejada").addClass('d-none')
+          $(".form-group.divisaoDesejada").addClass('d-none')
      }
      else {
-          $("#boxDivisaoDesejada ").removeClass('d-none')
+          $(".form-group.divisaoDesejada").removeClass('d-none')
      }
 
      AddLoad()
+
+
 })
-
-
-
 
 // quando mudar a divisão atual
 $("#divisaoAtual").change(() => {
@@ -57,8 +70,16 @@ function AddLoad() {
      function Load() {
           load.classList.add("d-none")
 
-          mudaPreçoLOL()
+          if (trataNome("choice") == "leagueoflegends") {
+               mudaPreçoLOL()
+          }
+          else if (trataNome("choice") == "wildrift") {
 
+               mudaPreçoWild()
+          }
+          else {
+               mudaPreçoValorant()
+          }
 
           Aviso()
      }
@@ -67,7 +88,6 @@ function AddLoad() {
 
 
 }
-
 
 
 // verifica se os elos estão certos se não manda o aviso
@@ -84,6 +104,18 @@ function Aviso() {
           mestre: 8,
           graomestre: 9,
           desafiante: 10
+     }
+
+     var elosValorant = {
+          ferro: 1,
+          bronze: 2,
+          prata: 3,
+          ouro: 4,
+          platina: 5,
+          diamante: 6,
+          ascendente: 7,
+          imortal: 8,
+          radiante: 9
      }
 
 
@@ -105,20 +137,36 @@ function Aviso() {
           document.getElementById("contentEloFinal").classList.remove("d-none")
      }
 
+     // se o jogo for valorant
+     if (trataNome("choice") == "valorant") {
+          if (elosValorant[`${ligaAtual}`] > elosValorant[`${ligaDesejada}`]) {
+               esconde()
+          }
+          else if (elosValorant[`${ligaAtual}`] == elosValorant[`${ligaDesejada}`] && divisaoAtual >= divisaoDesejada) {
+               esconde()
+          }
+          else {
+               mostra()
+          }
 
-     if (elos[`${ligaAtual}`] > elos[`${ligaDesejada}`]) {
-          esconde()
      }
-     else if (elos[`${ligaAtual}`] == elos[`${ligaDesejada}`] && divisaoAtual <= divisaoDesejada) {
-          esconde()
-     }
-     else if (ligaAtual == "mestre" && ligaDesejada == "mestre" || ligaAtual == "graomestre" && ligaDesejada == "graomestre" || ligaAtual == "desafiante" && ligaDesejada == "desafiante") {
-          esconde()
-     }
+     // se não é lol ou wild
      else {
-          mostra()
-     }
 
+          if (elos[`${ligaAtual}`] > elos[`${ligaDesejada}`]) {
+               esconde()
+          }
+          else if (elos[`${ligaAtual}`] == elos[`${ligaDesejada}`] && divisaoAtual <= divisaoDesejada) {
+               esconde()
+          }
+          else if (ligaAtual == "mestre" && ligaDesejada == "mestre") {
+               esconde()
+          }
+          else {
+               mostra()
+          }
+
+     }
 
 }
 
@@ -126,6 +174,7 @@ function Aviso() {
 
 // manda os preços do league of legends
 function mudaPreçoLOL() {
+
 
      const eloboost = {
           ferro4: 0,
@@ -196,6 +245,102 @@ function mudaPreçoLOL() {
           mestre2: 968,
           mestre1: 968
      }
+     if (trataNome("title") == "eloboost") {
+          calculaPreco(eloboost)
+          desconto(eloboost)
+     }
+     if (trataNome("title") == "duoboost") {
+          calculaPreco(duoboost)
+          desconto(duoboost)
+     }
+
+
+
+}
+
+
+
+// manda os preços do wild rift
+function mudaPreçoWild() {
+
+     const eloboost = {
+
+          ferro4: 0,
+          ferro3: 10,
+          ferro2: 20,
+          ferro1: 30,
+          bronze4: 40,
+          bronze3: 52,
+          bronze2: 64,
+          bronze1: 76,
+          prata4: 91,
+          prata3: 105,
+          prata2: 121,
+          prata1: 136,
+          ouro4: 156,
+          ouro3: 176,
+          ouro2: 196,
+          ouro1: 216,
+          platina4: 241,
+          platina3: 266,
+          platina2: 291,
+          platina1: 316,
+          esmeralda4: 361,
+          esmeralda3: 406,
+          esmeralda2: 451,
+          esmeralda1: 496,
+          diamante4: 576,
+          diamante3: 656,
+          diamante2: 751,
+          diamante1: 871,
+          mestre4: 1011,
+          mestre3: 1011,
+          mestre2: 1011,
+          mestre1: 1011,
+          graomestre4: 1461,
+          graomestre3: 1461,
+          graomestre2: 1461,
+          graomestre1: 1461,
+          desafiante4: 2361,
+          desafiante3: 2361,
+          desafiante2: 2361,
+          desafiante1: 2361
+     }
+     const duoboost = {
+          ferro4: 0,
+          ferro3: 15,
+          ferro2: 30,
+          ferro1: 45,
+          bronze4: 63,
+          bronze3: 81,
+          bronze2: 99,
+          bronze1: 117,
+          prata4: 137,
+          prata3: 157,
+          prata2: 177,
+          prata1: 197,
+          ouro4: 222,
+          ouro3: 247,
+          ouro2: 272,
+          ouro1: 297,
+          platina4: 332,
+          platina3: 367,
+          platina2: 402,
+          platina1: 437,
+          esmeralda4: 472,
+          esmeralda3: 562,
+          esmeralda2: 652,
+          esmeralda1: 742,
+          diamante4: 882,
+          diamante3: 1022,
+          diamante2: 1182,
+          diamante1: 1372,
+          mestre4: 1622,
+          mestre3: 1622,
+          mestre2: 1622,
+          mestre1: 1622,
+
+     }
 
      if (trataNome("title") == "eloboost") {
           calculaPreco(eloboost)
@@ -208,10 +353,101 @@ function mudaPreçoLOL() {
 
 
 
-
 }
 
+// manda os preços do valorant
+function mudaPreçoValorant() {
 
+     const eloboost = {
+
+          ferro1: 0,
+          ferro2: 6,
+          ferro3: 12,
+
+          bronze1: 18,
+          bronze2: 24,
+          bronze3: 30,
+
+          prata1: 40,
+          prata2: 50,
+          prata3: 60,
+
+          ouro1: 76,
+          ouro2: 92,
+          ouro3: 108,
+
+          platina1: 129,
+          platina2: 150,
+          platina3: 171,
+
+
+          diamante1: 210,
+          diamante2: 249,
+          diamante3: 288,
+
+          ascendente1: 338,
+          ascendente2: 388,
+          ascendente3: 438,
+
+          imortal1: 528,
+          imortal2: 618,
+          imortal3: 718,
+
+          radiante1: 968,
+          radiante2: 968,
+          radiante3: 968,
+
+     }
+
+     const duoboost = {
+          ferro1: 0,
+          ferro2: 12,
+          ferro3: 24,
+
+          bronze1: 44,
+          bronze2: 64,
+          bronze3: 84,
+
+          prata1: 109,
+          prata2: 134,
+          prata3: 159,
+
+          ouro1: 194,
+          ouro2: 229,
+          ouro3: 264,
+
+          platina1: 314,
+          platina2: 364,
+          platina3: 414,
+
+          diamante1: 504,
+          diamante2: 594,
+          diamante3: 684,
+
+          ascendente1: 804,
+          ascendente2: 924,
+          ascendente3: 1064,
+
+          imortal1: 1314,
+          imortal2: 1564,
+          imortal3: 1864,
+
+          radiante1: 2614,
+          radiante2: 2614,
+          radiante3: 2614,
+     }
+
+     if (trataNome("title") == "eloboost") {
+          calculaPreco(eloboost)
+          desconto(eloboost)
+     }
+     if (trataNome("title") == "duoboost") {
+          calculaPreco(duoboost)
+          desconto(duoboost)
+     }
+
+
+}
 
 // trata o title da pagina capturado
 function trataNome(id) {
@@ -228,6 +464,7 @@ function calculaPreco(tipoJogo) {
      let resultado
      let resultadoFinal
 
+
      resultado = tipoJogo[`${desejada}`] - tipoJogo[`${atual}`]
 
      resultadoFinal = resultado / 0.8
@@ -239,7 +476,9 @@ function calculaPreco(tipoJogo) {
 
 // faz o desconto 
 function desconto(tipoJogo) {
- 
+
+     let desconto = 20
+
 
      let atual = document.getElementById("ligaAtual").value + document.getElementById("divisaoAtual").value
      let desejada = document.getElementById("ligaDesejada").value + document.getElementById("divisaoDesejada").value
@@ -250,12 +489,10 @@ function desconto(tipoJogo) {
 
      descontoFinal = resultado / 0.8
 
+     console.log(tipoJogo.ferro1)
 
-     document.getElementById("desconto").innerHTML = `<small>DE:  ${moedaBrasil(descontoFinal)} </small>`
+     document.getElementById("desconto").innerHTML = `<small>DE: ${moedaBrasil(descontoFinal)}</small> `
 }
-
-
-
 // formata o numero para moeda brasileira
 function moedaBrasil(valor) {
 
@@ -263,4 +500,9 @@ function moedaBrasil(valor) {
      var valorFormatado = valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 
      return valorFormatado
-} 
+}
+
+
+
+
+

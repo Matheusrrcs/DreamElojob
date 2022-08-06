@@ -124,81 +124,94 @@ function detecMoblie() {
     }
 }
 
+
 $(function () {
 
     var anim = anime({
-        targets: '.card-game',
-
-        duration: 2400,
-        opacity: [0, 1],
-
-        delay: (el, i) => {
-            return 100 + 50 * i;
-        },
+      targets: '.card-game',
+  
+      duration: 2400,
+      opacity: [0, 1],
+  
+      delay: (el, i) => {
+        return 100 + 50 * i;
+      },
     })
-
+  
     let gameslol = document.getElementsByClassName('Lgamelol')[0];
     let gameswd = document.getElementsByClassName('Lgamewd')[0];
     let gamesvava = document.getElementsByClassName('Lgamevava')[0];
-
+  
     let contentlol = document.getElementsByClassName('content-lol')[0];
     let contentwd = document.getElementsByClassName('content-wd')[0];
     let contentvava = document.getElementsByClassName('content-vava')[0];
-
+  
     let lol = document.getElementsByClassName('gamelol')[0];
     let wd = document.getElementsByClassName('gamewd')[0];
     let vava = document.getElementsByClassName('gamevava')[0];
-
-
+  
+  
     function toggle() {
-
-        if (anim.began) {
-
-            anim.restart()
-        }
-
-
+  
+      if (anim.began) {
+  
+        anim.restart()
+      }
+  
+  
     }
-
+  
     gameslol.addEventListener("click", () => {
-        toggle()
-
-        lol.classList.add("active");
-        wd.classList.remove("active");
-        vava.classList.remove("active");
-
-        gameslol.classList.add("active");
-        gameswd.classList.remove("active");
-        gamesvava.classList.remove("active");
-
+      toggle()
+  
+      lol.classList.add("active");
+      wd.classList.remove("active");
+      vava.classList.remove("active");
+  
+      gameslol.classList.add("active");
+      gameswd.classList.remove("active");
+      gamesvava.classList.remove("active");
+  
+      contentlol.classList.add("active");
+      contentwd.classList.remove("active");
+      contentvava.classList.remove("active");
+  
     })
-
+  
     gameswd.addEventListener("click", () => {
-
-        toggle()
-        lol.classList.remove("active");
-        wd.classList.add("active");
-        vava.classList.remove("active");
-
-        gameslol.classList.remove("active");
-        gameswd.classList.add("active");
-        gamesvava.classList.remove("active");
+  
+      toggle()
+      lol.classList.remove("active");
+      wd.classList.add("active");
+      vava.classList.remove("active");
+  
+      gameslol.classList.remove("active");
+      gameswd.classList.add("active");
+      gamesvava.classList.remove("active");
+  
+      contentlol.classList.remove("active");
+      contentwd.classList.add("active");
+      contentvava.classList.remove("active");
     })
-
-
+  
+  
     gamesvava.addEventListener("click", () => {
-        toggle()
-        lol.classList.remove("active");
-        wd.classList.remove("active");
-        vava.classList.add("active");
-
-        gameslol.classList.remove("active");
-        gameswd.classList.remove("active");
-        gamesvava.classList.add("active");
+      toggle()
+      lol.classList.remove("active");
+      wd.classList.remove("active");
+      vava.classList.add("active");
+  
+      gameslol.classList.remove("active");
+      gameswd.classList.remove("active");
+      gamesvava.classList.add("active");
+  
+      contentlol.classList.remove("active");
+      contentwd.classList.remove("active");
+      contentvava.classList.add("active");
     })
-
-
-
-})
-
+  
+  
+  
+  })
+  
 

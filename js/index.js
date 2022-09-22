@@ -72,7 +72,7 @@ $(".whats").click((e) => {
 
     text = 'Olá,%20estou%20no%20site%20e%20gostaria%20de%20tirar%20uma%20duvida.'
 
-    var url = `https://${detecMoblie()}.whatsapp.com/send?1=pt_BR&phone=557198726-2223&text=`.concat(text);
+    var url = `https://wa.me/5571987262223?text=`.concat(text);
 
     window.open(url);
 

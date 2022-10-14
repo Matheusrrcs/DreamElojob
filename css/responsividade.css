@@ -19,10 +19,14 @@
     margin: 0;
     text-align: center;
   }
-
+  .service-thumb img {
+   
+margin-top: 3rem;
+  }
   .section_heading .title-aval {
     align-items: center !important;
   }
+
 
   .section-header {
     background-size: cover;
@@ -33,6 +37,10 @@
   .content-area2 {
     text-align: center;
   }
+  .content-area2 .row{
+    flex-direction: column-reverse;
+  }
+  
 
   .content-area2 .divider-line {
     margin: 10px auto !important;

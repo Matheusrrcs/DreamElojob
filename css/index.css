@@ -920,6 +920,8 @@
    position: relative;
    z-index: 1;
    color: white;
+   margin-top: 4rem;
+   margin-bottom: 6rem;
  }
 
  .d-sm-block {
@@ -933,8 +935,8 @@
  }
 
  .service-thumb img {
-   margin-bottom: 6rem;
+   
    overflow: hidden;
 
-   max-width: 600px;
+   max-width: 450px;
  }

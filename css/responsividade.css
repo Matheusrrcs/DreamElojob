@@ -34,15 +34,16 @@ margin-top: 3rem;
     position: relative;
   }
 
-  .content-area2 {
+  .content-area2 , .content-area3 {
     text-align: center;
   }
-  .content-area2 .row{
+
+  .content-area2  .linha-area2{
     flex-direction: column-reverse;
   }
   
 
-  .content-area2 .divider-line {
+  .content-area2 .divider-line ,  .content-area3 .divider-line{
     margin: 10px auto !important;
   }
 

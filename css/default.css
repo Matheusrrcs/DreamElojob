@@ -23,8 +23,8 @@ body {
 
 .navbar {
 
-  padding-bottom: 0;
-  padding-top: 0;
+  padding-bottom: 1rem;
+  padding-top:1rem;
 
 }
 
@@ -118,7 +118,7 @@ body {
 }
 
 .navbar-brand img {
-  width: 120px;
+  width: 80px;
 
 }
 

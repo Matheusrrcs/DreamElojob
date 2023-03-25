@@ -2,15 +2,23 @@
 
 
 $(document).ready(function () {
-    $('#nav').load('navbar.html');
+    const request = new XMLHttpRequest();
+    request.open('GET', 'navbar.html');
+    request.onload = function() {
+      if (request.status === 200) {
+        document.querySelector('#nav').innerHTML = request.responseText;
+      } else {
+        console.error('Erro ao carregar o arquivo navbar.html');
+      }
+    };
+    request.send();
    
-  
   });
+
 
   $(function () {
     $('[data-toggle="tooltip"]').tooltip()
   })
-
 
 
 // função do dropdown menu

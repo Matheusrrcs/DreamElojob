@@ -225,3 +225,35 @@ $(function () {
   })
   
 
+
+  var pessoas = document.getElementById("visits")
+  var numero
+  
+  if (localStorage.getItem('pessoas') == null) {
+  
+    numero = Math.floor(Math.random() * (20 - 10 + 1)) + 10;
+  
+    localStorage.setItem('pessoas', numero)
+  
+    pessoas.innerText = localStorage.getItem('pessoas')
+  }
+  else {
+  
+    pessoas.innerText = localStorage.getItem('pessoas')
+  }
+  
+function Temporizador(initiate) {
+
+    if (initiate !== true) {
+      numero = Math.floor(Math.random() * (20 - 10 + 1)) + 10;
+      localStorage.setItem('pessoas', numero)
+      pessoas.innerText = localStorage.getItem('pessoas')
+    }
+  
+    setTimeout(Temporizador, 15000);
+  
+  }
+  
+  $(function () {
+    Temporizador(true);
+  });

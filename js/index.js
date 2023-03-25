@@ -4,8 +4,12 @@
 $(document).ready(function () {
     $('#nav').load('navbar.html');
    
+  
   });
 
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
 
 
 

@@ -184,6 +184,16 @@ footer a {
   font-size: 3.281rem;
 }
 
+
+.discord-fixed{
+  position: fixed;
+  bottom: 120px;
+  cursor: pointer;
+  right: 3%;
+  z-index: 1101;
+  font-size: 3.281rem;
+}
+
 .whats {
   cursor: pointer;
 }

@@ -38,7 +38,43 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
     return false;
   }
   </script>
-  
+  <!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '934175998023264');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=934175998023264&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+ 
+
+
+<meta name="facebook-domain-verification" content="8x5cuzt6vspo6jdvzlzyexzfwgz37s" />
+
+ 
+
+
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NZ6L49W');</script>
+<!-- End Google Tag Manager -->
+ 
+
+
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -86,174 +122,9 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
 <body>
 
 
-  <!-- inicio do navbar -->
-  <nav class="navbar   navbar-expand-lg fixed-top  navbar-round " id="navbar">
+  <div id="nav">
 
-    <!-- inicio do container do navbar -->
-    <div class="container">
-
-        <!--  logo do navbar -->
-        <a class="navbar-brand" href="https://elojobdream.com/ "><img src="img/icon/logo.svg"
-                alt="logo elojob dream"></a>
-
-        <!-- botão do menu responsivo  -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="navbar-toggler">
-            <span class="fa-solid fa-bars"></span>
-        </button>
-
-        <!-- itens do menu navbar -->
-        <div class="collapse navbar-collapse " id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-
-                <li class="nav-item dropdown active">
-                    <a class="nav-link" href="https://elojobdream.com/ ">Início</a>
-
-
-                </li>
-
-                <!-- elo boost menu de dropdown -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" role="button" id="dropdownMenuButton" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="true">ELOJOB</a>
-
-                    <ul class="dropdown-menu styled-menu animated fadeIn" aria-labelledby="dropdownMenuButton">
-                        <li class="item-drop ">
-                            <a href="https://elojobdream.com/eloboost" class="dropdown-item text-uppercase">LEAGUE
-                                OF
-                                LEGENDS</a>
-                        </li>
-
-                        <li class="item-drop">
-                            <a href="https://elojobdream.com/eloboost-wildrift"
-                                class="dropdown-item text-uppercase">WILD
-                                RIFT</a>
-                        </li>
-
-                        <li class="item-drop">
-                            <a href="https://elojobdream.com/eloboost-valorant"
-                                class="dropdown-item text-uppercase">VALORANT</a>
-                        </li>
-                    </ul>
-
-                </li>
-
-                <!-- duo boost menu de dropdown -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" role="button" id="dropdownMenuButton" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">DUO BOOST</a>
-
-                    <ul class="dropdown-menu styled-menu animated fadeIn" aria-labelledby="dropdownMenuButton">
-                        <li class="item-drop ">
-                            <a href="https://elojobdream.com/duoboost" class="dropdown-item text-uppercase">LEAGUE
-                                OF
-                                LEGENDS</a>
-                        </li>
-
-                        <li class="item-drop">
-                            <a href="https://elojobdream.com/duoboost-wildrift"
-                                class="dropdown-item text-uppercase">WILD
-                                RIFT</a>
-                        </li>
-
-                        <li class="item-drop">
-                            <a href="https://elojobdream.com/duoboost-valorant"
-                                class="dropdown-item text-uppercase">VALORANT</a>
-                        </li>
-                    </ul>
-
-                </li>
-
-                <!-- md10 menu de dropdown -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" role="button" id="dropdownMenuButton" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">MD10/MD5</a>
-
-                    <ul class="dropdown-menu styled-menu animated fadeIn" aria-labelledby="dropdownMenuButton">
-                        <li class="item-drop ">
-                            <a href="https://elojobdream.com/md10" class="dropdown-item text-uppercase">LEAGUE
-                                OF LEGENDS</a>
-                        </li>
-
-                        <li class="item-drop">
-                            <a href="https://elojobdream.com/md10-wildrift"
-                                class="dropdown-item text-uppercase">WILD RIFT</a>
-                        </li>
-
-                        <li class="item-drop">
-                            <a href="https://elojobdream.com/md5-valorant"
-                                class="dropdown-item text-uppercase">VALORANT</a>
-                        </li>
-                    </ul>
-
-                </li>
-
-                <!-- COACH menu de dropdown -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" role="button" id="dropdownMenuButton" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">COACH</a>
-
-                    <ul class="dropdown-menu styled-menu" aria-labelledby="dropdownMenuButton">
-                        <li class="item-drop ">
-                            <a href="https://elojobdream.com/coach" class="dropdown-item text-uppercase">LEAGUE
-                                OF LEGENDS</a>
-                        </li>
-
-                        <li class="item-drop">
-                            <a href="https://elojobdream.com/coach-wildrift"
-                                class="dropdown-item text-uppercase">WILD RIFT</a>
-                        </li>
-
-                        <li class="item-drop">
-                            <a href="https://elojobdream.com/coach-valorant"
-                                class="dropdown-item text-uppercase">VALORANT</a>
-                        </li>
-                    </ul>
-
-                </li>
-
-
-
-
-                <div class="btn-group">
-                    <a class="btn" href="https://elojobdream.com/eloboost" target="_blank">Começar</a>
-                </div>
-
-                <div class="icons-nav ">
-                    <li class="nav-item">
-                        <a class="btn-floating btn-fb mx-1 " href="https://www.instagram.com/elojobdreamoficial/"
-                            target="_blank">
-                            <i class="fa fa-instagram  " aria-hidden="true"></i>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="btn-floating btn-tw mx-1 whats">
-                            <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                        </a>
-                    </li>
-                </div>
-
-
-            </ul>
-
-
-
-
-        </div>
-
-
-        <!-- fim dos itens do menu -->
-
-
-
-
-    </div>
-    <!-- fim do container do navbar -->
-
-</nav>
-  <!-- fim do navbar -->
-
-
+  </div>
   <!-- incio do primeiro background -->
   <div class="section-header-elo ">
 
@@ -304,7 +175,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
       <div class="row">
         <div class="col-lg-3 col-sm-1 "> <i class="fa-solid fa-gamepad"></i></div>
         <div class="col-9  ">
-          <h4 class="title-tpb">+5000</h4>
+          <h4 class="title-tpb">+9000 </h4>
           <p class="text-tpb">serviços finalizados</p>
         </div>
       </div>
@@ -322,7 +193,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
       <div class="row">
         <div class="col-lg-3  col-sm-1"> <i class="fa-solid fa-user-group"></i></div>
         <div class="col-9  ">
-          <h4 class="title-tpb">23</h4>
+          <h4 class="title-tpb">+20</h4>
           <p class="text-tpb">boosters online</p>
         </div>
       </div>
@@ -342,9 +213,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
           <h2 id="title">
             ELO <span class="textoColorido"> BOOST </span>
           </h2>
-          <p>No serviço (Elojob) um jogador vai jogar na sua conta até o elo e divisão desejada, você pode escolher sua
-            lane/campeões e assistir as partidas ao vivo no nosso Discord. Caso não se sinta seguro e confortavel em contratar o
-            serviço, você pode optar pelo Duoboost. </p>
+          <p>Com nosso serviço de Elojob, você terá um jogador experiente jogando em sua conta até alcançar o elo e divisão desejada. Você terá a liberdade de escolher sua lane e campeões favoritos, além de poder assistir às partidas ao vivo no nosso Discord. Mas se preferir, oferecemos também o serviço de Duoboost, onde você poderá jogar em dupla com um jogador experiente e aprender técnicas para subir de elo com segurança e confiança. Não deixe suas partidas serem arruinadas por jogadores problemáticos, escolha a Dream Elojob e suba de elo de forma efetiva e rápida!</p>
           <div class="divider-line"></div>
 
         </div>
@@ -595,15 +464,19 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
         <div class="col-lg-6">
           <div class="container">
             <p><strong>Algumas especificações:</strong></p>
-            <p> O cliente não poderá jogar partidas ranqueadas durante o serviço.
-              É necessário que a conta possua, no mínimo, 20 campeões habilitados para que seja possível jogar partidas
-              ranqueadas e executar o serviço.</p>
-            <p> Em caso raro de o booster falhar alguma Md5 ou cair de divisão, garantimos integralmente o retorno do
-              elo e classicatórias sem custo adicional.</p>
-            <p> Em caso de baixo mmr (inferior a 15 pontos ganhos por partida) a conta estará exposta a taxa de 25% do
-              valor do serviço contratado, referente a neutralização da conta.
+            <p>O cliente não poderá jogar partidas ranqueadas durante o serviço. É necessário que a conta possua, no
+              mínimo, 20 campeões habilitados para que seja possível jogar partidas ranqueadas e executar o serviço.
             </p>
-            <p>Devido a demanda do fim de ano, o prazo pra entrega do serviço (eloboost) fica indeterminado, mas irá ser concluído de acordo com o pedido solicitado</p>
+            <p>Em caso raro de o booster falhar alguma Md5 ou cair de divisão, garantimos integralmente o retorno do elo
+              e classicatórias sem custo adicional.
+            </p>
+            <p> Em caso de baixo mmr (inferior a 25 pontos ganhos por partida) a conta estará exposta a taxa de 25% do
+              valor do serviço contratado, referente a neutralização da conta.
+
+            </p>
+            <p> 
+              Se houver fila, o prazo do serviço fica indeterminado, consulte-nos antes de concluir a solicitação do serviço.
+              </p>
           </div>
         </div>
       </div>
@@ -764,7 +637,8 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
   <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
   <!-- link javascript do fontawesome -->
   <script src="https://kit.fontawesome.com/8e4ad95b91.js" crossorigin="anonymous"></script>
-
+    <!-- link do jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="js/index.js"></script>
   <script src="js/boost.js"></script>
   <script src="js/comprar.js"></script>

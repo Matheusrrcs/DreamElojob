@@ -1,4 +1,14 @@
 
+
+
+$(document).ready(function () {
+    $('#nav').load('navbar.html');
+   
+  });
+
+
+
+
 // função do dropdown menu
 $(function () {
     $("#navbar").bootnavbar();

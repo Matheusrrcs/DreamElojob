@@ -237,3 +237,26 @@
     margin-bottom: 2rem;
 
 }
+
+.flash{
+    width: 50px;
+    margin: 0.5rem;
+}
+
+label#flashD   {
+    margin-left: 2rem;
+    
+}
+ 
+
+.form-group .radio {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.destaque{
+    color: #007ED0;
+}

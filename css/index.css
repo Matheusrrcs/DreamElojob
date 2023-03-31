@@ -397,16 +397,17 @@
    font-size: 13px;
    font-weight: inherit;
  }
- .space {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: self-start;
-  height: 100%;
-}
 
- .card-game .btn{
-  margin:0;
+ .space {
+   display: flex;
+   justify-content: space-between;
+   flex-direction: column;
+   align-items: self-start;
+   height: 100%;
+ }
+
+ .card-game .btn {
+   margin: 0;
  }
 
  .section-boost h1 {
@@ -581,7 +582,7 @@
    flex-direction: column;
    align-items: center;
  }
- 
+
  .body-boost.um {
    max-width: 15rem;
    height: 100%;
@@ -925,10 +926,13 @@
  .faq-accordian .card .card-body p:last-child {
    margin-bottom: 0;
  }
-.grid-area3 img{
-  width: 70%;
-}
- .content-area2,.content-area3 {
+
+ .grid-area3 img {
+   width: 70%;
+ }
+
+ .content-area2,
+ .content-area3 {
    padding: 3rem 0 0 0;
    position: relative;
    z-index: 1;
@@ -948,24 +952,51 @@
  }
 
  .service-thumb img {
-   
+
    overflow: hidden;
 
    max-width: 450px;
  }
-.section-heading .row{
-  padding-top:2rem;
-}
- .cabecalho-pedido-details{
-  font-size:20px;
-  font-weight: bold;
+
+ .section-heading .row {
+   padding-top: 2rem;
  }
 
- .icon-pedido-details svg{
-  fill: #007ED0;
+ .cabecalho-pedido-details {
+   font-size: 20px;
+   font-weight: bold;
  }
- hr{
-  width: 100%;
-  height: 2px;
-  background-color: #444444;
+
+ .icon-pedido-details svg {
+   fill: #007ED0;
  }
+
+ hr {
+   width: 100%;
+   height: 2px;
+   background-color: #444444;
+ }
+
+
+
+
+ .modal-dialog {
+   max-width: 960px;
+   width: auto;
+ }
+
+ .modal {
+  top: 50%;
+  left: 50%;
+  height: auto;
+ 
+  transform: translate(-50%,-50%);
+}
+
+.modal-backdrop.show {
+  opacity: 0.8 !important;}
+
+
+
+  
+ 

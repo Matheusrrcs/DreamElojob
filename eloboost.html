@@ -368,72 +368,73 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
           </div>
 
           <div class="col-lg-4">
-            <div class="body-elo">
+              <div class="body-elo">
 
-              <div class="body-elo-title subtitle">
-                <h4><span class="numero-title">3</span>ADICIONAIS DO PEDIDO</h4>
-              </div>
+                <div class="body-elo-title subtitle">
+                  <h4><span class="numero-title">3</span>ADICIONAIS DO PEDIDO</h4>
+                </div>
 
-              <div class="container pt-4">
-                <div class="form-group">
+                <div class="container pt-4">
+                  <div class="form-group">
 
-                  <label for="filaDesejada"> Fila Desejada - <span class="destaque">Gratuito</span></label>
+                    <label for="filaDesejada"> Fila Desejada - <span class="destaque">Gratuito</span></label>
 
-                  <div class="icon-sel">
+                    <div class="icon-sel">
 
-                    <div class="bgk-icon-select">
-                      <span class="icon-select "><i class="fa-solid fa-trophy"></i></span>
+                      <div class="bgk-icon-select">
+                        <span class="icon-select "><i class="fa-solid fa-trophy"></i></span>
+                      </div>
+
+                      <select name="filaDesejada" id="filaDesejada" class="custom-select form-round ">
+
+                        <option value="Sem preferência">Sem fila desejada</option>
+                        <option value="Solo/Duo" selected>Solo/Duo</option>
+                        <option value="flex">Flex</option>
+
+                      </select>
                     </div>
+                  </div>
 
-                    <select name="filaDesejada" id="filaDesejada" class="custom-select form-round ">
+                    <!-- <div class="form-group">
 
-                      <option value="null">Sem fila desejada</option>
-                      <option value="solo" selected>Solo/Duo</option>
-                      <option value="flex">Flex</option>
+                      <label for="filaDesejada"> Personagem Desejado - <span class="destaque">Gratuito</span></label>
 
+                      <div class="icon-sel">
+
+                        <div class="bgk-icon-select">
+                          <span class="icon-select "><i class="fa-solid fa-trophy"></i></span>
+                        </div>
+
+
+                    <select id="champ-select" name="champ-select" class="custom-select form-round ">
+                      <option value="null">Sem campeão preferido</option>
                     </select>
-                  </div>
-                </div>
 
-                <div class="form-group">
-
-                  <label for="filaDesejada"> Personagem Desejado - <span class="destaque">Gratuito</span></label>
-
-                  <div class="icon-sel">
-
-                    <div class="bgk-icon-select">
-                      <span class="icon-select "><i class="fa-solid fa-trophy"></i></span>
                     </div>
+                  </div> -->
 
+                  <div class="form-group ">
+                      <div> Feitiço de Invocador - <span class="destaque">Gratuito</span></div>
+                      <div class="radio">
+                    
+                        <label for="f" id="flashF">
+                          <div class="row">
+                            <input id="f" type="radio" name="flash/ignite" value="Flash no F">
+                            <img src="img/icon/flash.png" alt="" class="flash">
+                            <img src="img/icon/ignite.jpg" alt="" class="flash">
+                          </div>
+                        </label>
 
-                <select id="champ-select" name="champ-select" class="custom-select form-round ">
-                  <option value="null">Sem campeão preferido</option>
-                </select>
+                        <label for="d" id="flashD">
+                          <div class="row">
+                            <input id="d" type="radio" name="flash/ignite" value="Flash no D">
 
-                </div>
-              </div>
-                <div class="form-group ">
-                  <div> Feitiço de Invocador - <span class="destaque">Gratuito</span></div>
-                  <div class="radio">
-                 
-                    <label for="f" id="flashF">
-                      <div class="row">
-                        <input id="f" type="radio" name="flash/ignite" value="f">
-                        <img src="img/icon/flash.png" alt="" class="flash">
-                        <img src="img/icon/ignite.jpg" alt="" class="flash">
+                            <img src="img/icon/ignite.jpg" alt="" class="flash">
+                            <img src="img/icon/flash.png" alt="" class="flash">
+                          </div>
+                        </label>
                       </div>
-                    </label>
-
-                    <label for="d" id="flashD">
-                      <div class="row">
-                        <input id="d" type="radio" name="flash/ignite" value="d">
-
-                        <img src="img/icon/ignite.jpg" alt="" class="flash">
-                        <img src="img/icon/flash.png" alt="" class="flash">
-                      </div>
-                    </label>
-                  </div>
-                </div>
+                    </div>
 
               </div>
 
@@ -441,6 +442,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
             </div>
 
           </div>
+          
         </div>
         <div class="row price">
           <div id="contentEloFinal">
@@ -729,30 +731,7 @@ In your html page, add the snippet and call gtag_report_conversion when someone 
   <script src="js/index.js"></script>
   <script src="js/boost.js"></script>
   <script src="js/comprar.js"></script>
-
-  <script>
-    const apiKey = "YOUR_API_KEY_HERE";
-    const champSelect = document.getElementById("champ-select");
-    
-    // função para buscar lista de personagens da API
-    async function fetchChampions() {
-      const response = await fetch(`https://ddragon.leagueoflegends.com/cdn/11.2.1/data/en_US/champion.json`);
-      const data = await response.json();
-      const champions = data.data;
-      
-      // iterar sobre a lista de personagens e criar opções no select
-      Object.keys(champions).forEach(champ => {
-        const option = document.createElement("option");
-        option.text = champ;
-        option.value = champ;
-        champSelect.add(option);
-      });
-    }
-    
-    fetchChampions(); // buscar lista de personagens ao carregar a página
-    
-     
-  </script>
+ 
 </body>
 
 </html>

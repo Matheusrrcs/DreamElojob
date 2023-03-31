@@ -33,7 +33,30 @@ function eloboostDuo() {
     let lgd = id("ligaDesejada").value.toLocaleLowerCase()
     let dva = id("divisaoAtual").value.toLocaleLowerCase().replaceAll(" ", "").trim()
     let dvd = id("divisaoDesejada").value.toLocaleLowerCase().replaceAll(" ", "").trim()
+<<<<<<< Updated upstream
 
+=======
+ 
+    if (ch != "valorant") {
+      
+        var fila = id('filaDesejada').value;
+        // seleciona todos os elementos de entrada com o mesmo nome de grupo
+        const inputs = document.querySelectorAll('input[name="flash/ignite"]');
+
+        // percorre os elementos e verifica qual está selecionado
+        var fd = "";
+        inputs.forEach(input => {
+            if (input.checked) {
+                fd = input.value;
+            }
+        });
+
+        if (fd == "") {
+            fd = 'Sem posição escolhida'
+        }
+    }
+
+>>>>>>> Stashed changes
     lga = lga[0].toUpperCase() + lga.substr(1);
     lgd = lgd[0].toUpperCase() + lgd.substr(1);
 
@@ -68,7 +91,17 @@ function eloboostDuo() {
             lgd = "Grão Mestre"
         }
 
+<<<<<<< Updated upstream
         text = 'Olá,%20estou%20no%20site%20e%20quero%20' + titles + '%20para%20' + ch + ',%20atualmente%20' + lga + ' %20e%20quero%20chegar%20no%20' + lgd + '%20.' + value
+=======
+        if (ch == 'Valorant') {
+           
+            text = 'Olá, estou no site e quero ' + titles + ' para ' + ch + ', atualmente ' + lga + '  e quero chegar no ' + lgd + ' .' + value;
+        }
+        else {  
+            text = 'Olá, estou no site e quero ' + titles + ' para ' + ch + ', atualmente ' + lga + '  e quero chegar no ' + lgd + ' .' + value + " \nAdicionais:\nFila desejada: " + fila + "\nFeitiços: " + fd;
+        }
+>>>>>>> Stashed changes
     }
 
     else if (lgd.toLowerCase() == 'mestre' || lgd.toLowerCase() == 'graomestre' || lgd.toLowerCase() == 'desafiante' || lgd.toLowerCase() == "radiante") {
@@ -80,7 +113,18 @@ function eloboostDuo() {
             lgd = "Grão Mestre"
         }
 
+<<<<<<< Updated upstream
         text = 'Olá,%20estou%20no%20site%20e%20quero%20' + titles + '%20para%20' + ch + ',%20atualmente%20' + lga + '%20' + dva + '%20e%20quero%20chegar%20no%20' + lgd + '%20.' + value
+=======
+
+        if (ch == 'Valorant') {
+         
+            text = 'Olá, estou no site e quero ' + titles + ' para ' + ch + ', atualmente ' + lga + ' ' + dva + ' e quero chegar no ' + lgd + ' .' + value;
+        } else{
+           
+            text = 'Olá, estou no site e quero ' + titles + ' para ' + ch + ', atualmente ' + lga + ' ' + dva + ' e quero chegar no ' + lgd + ' .' + value + " \nAdicionais:\nFila desejada: " + fila + "\nFeitiços: " + fd;
+        }
+>>>>>>> Stashed changes
     }
 
     else if (lga.toLowerCase() == 'mestre' || lga.toLowerCase() == 'graomestre' || lga.toLowerCase() == 'desafiante' || lga.toLowerCase() == "radiante") {
@@ -92,7 +136,19 @@ function eloboostDuo() {
             lgd = "Grão Mestre"
         }
 
+<<<<<<< Updated upstream
         text = 'Olá,%20estou%20no%20site%20e%20quero%20' + titles + '%20para%20' + ch + ',%20atualmente%20' + lga + ' %20e%20quero%20chegar%20no%20' + lgd + '%20.' + value
+=======
+
+        if (ch == 'Valorant') {
+             
+            text = 'Olá, estou no site e quero ' + titles + ' para ' + ch + ', atualmente ' + lga + '  e quero chegar no ' + lgd + ' .' + value;
+        }
+      else{
+           
+            text = 'Olá, estou no site e quero ' + titles + ' para ' + ch + ', atualmente ' + lga + '  e quero chegar no ' + lgd + ' .' + value + " \nAdicionais:\nFila desejada: " + fila + "\nFeitiços: " + fd;
+        }
+>>>>>>> Stashed changes
     }
 
 
@@ -107,6 +163,18 @@ function eloboostDuo() {
         }
         text = 'Olá,%20estou%20no%20site%20e%20quero%20' + titles + '%20para%20' + ch + ',%20atualmente%20' + lga + '%20' + dva + '%20e%20quero%20chegar%20no%20' + lgd + '%20' + dvd + '. ' + value
 
+<<<<<<< Updated upstream
+=======
+      
+        if (ch == 'Valorant') {
+           
+            text = 'Olá, estou no site e quero ' + titles + ' para ' + ch + ', atualmente ' + lga + ' ' + dva + ' e quero chegar no ' + lgd + ' ' + dvd + '. ' + value
+        }
+       else{
+             
+            text = 'Olá, estou no site e quero ' + titles + ' para ' + ch + ', atualmente ' + lga + ' ' + dva + ' e quero chegar no ' + lgd + ' ' + dvd + '. ' + value + " \nAdicionais:\nFila desejada: " + fila + "\nFeitiços: " + fd;
+        }
+>>>>>>> Stashed changes
     }
 
     var url = `https://${type}.whatsapp.com/send?1=pt_BR&phone=5571987262223&text=`.concat(text);
@@ -153,7 +221,16 @@ function md10() {
         lga = "Grão Mestre"
     }
 
+<<<<<<< Updated upstream
     text = 'Olá,%20estou%20no%20site%20e%20quero%20' + titles + '%20de ' + ch + "%20 " + value + '%20. O%20meu%20elo%20era%20 ' + lga
+=======
+    if (ch == 'Valorant') {
+        text = 'Olá, estou no site e quero ' + titles + ' de ' + ch + "  " + value + ' . O meu elo era  ' + lga;
+    }
+    else {
+        text = 'Olá, estou no site e quero ' + titles + ' de ' + ch + "  " + value + ' . O meu elo era  ' + lga + " \nAdicionais:\nFila desejada: " + fila + "\nFeitiços: " + fd;
+    }
+>>>>>>> Stashed changes
 
     var url = `https://${type}.whatsapp.com/send?1=pt_BR&phone=5571987262223&text=`.concat(text);
 

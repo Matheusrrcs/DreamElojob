@@ -11,6 +11,12 @@
     justify-content: end;
 }
 
+.body-elo-title.subtitle h4
+{
+    display: flex;
+    align-items: center;
+}
+
 .faixa-lol {
 
     display: flex;
@@ -116,9 +122,13 @@
     box-shadow: 0 0 2em #007ED0;
     border-radius: 50%;
     color: white;
-    width: 2px;
-    height: 2px;
-    padding: .38em .95em .29em;
+    width: 14px;
+    display: flex;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+    height: 14px;
+    padding: 1rem;
     margin: 1rem;
 }
 
@@ -148,6 +158,8 @@
     height: 3.5rem;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
 
 }
 

@@ -10,7 +10,8 @@ $("#ligaAtual").change(() => {
           document.getElementById('imgAtual').src = `img/elos/${ligaAtual.value}.webp`;
      }
 
-     if (ligaAtual.value == "mestre" || ligaAtual.value == "graomestre") {
+
+     if (ligaAtual.value == "mestre" || ligaAtual.value == "graomestre" || ligaAtual.value == "desafiante" || ligaAtual.value == "radiante") {
           $(".form-group#boxDivisaoAtual").addClass('d-none')
 
      } else {
@@ -32,13 +33,13 @@ $("#ligaDesejada").change(() => {
           document.getElementById('imgDesejada').src = `img/elos/${ligaDesejada.value}.webp`;
      }
 
-
+      
      // se for mestre, desafiante ou grão mestre ele tira o select de divisão
      if (ligaDesejada.value == "mestre" || ligaDesejada.value == "graomestre" || ligaDesejada.value == "desafiante" || ligaDesejada.value == "radiante") {
-          $(".form-group.divisaoDesejada").addClass('d-none')
+          $(".form-group#boxDivisaoDesejada").addClass('d-none')
      }
      else {
-          $(".form-group.divisaoDesejada").removeClass('d-none')
+          $(".form-group#boxDivisaoDesejada").removeClass('d-none')
      }
 
      AddLoad()

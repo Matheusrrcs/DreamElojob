@@ -10,6 +10,35 @@
 }
 
 @media(max-width:991px) {
+.last-col-rd{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.content-area-rd p, .content-area-rd h3{
+text-align: center  !important;
+}
+.content-area-rd p::before{
+  display: none;
+}
+.titulo-rd{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-area-rd img{
+  margin:3rem auto 4rem auto !important;;
+}
+.content-area-rd {
+ 
+  background-size: cover;
+ 
+}
+.rd-p{
+  margin-bottom: 1rem !important;
+}
 
   .body-boost.um,
   .body-boost.dois,

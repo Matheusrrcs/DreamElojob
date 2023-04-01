@@ -6,10 +6,15 @@ $("#ligaAtual").change(() => {
     if (ligaAtual.value == 1) {
         document.getElementById("obs").innerText = "OBS: Não Possui acompanhamento mensal"
     }
-    else {
-        document.getElementById("obs").innerText = "OBS: Possui acompanhamento mensal"
+    else if(ligaAtual.value == 5) {
+        document.getElementById("obs").innerText = "OBS: +2 aulas práticas + acompanhamento de 30 dias grátis"
     }
+   else{
+    document.getElementById("obs").innerText = "OBS: +5 aulas práticas + acompanhamento de 30 dias grátis"
+}
 
+
+   
 })
 
 // liga e desliga a animação de load
@@ -36,9 +41,9 @@ function AddLoad() {
 function mudaPreço() {
 
     const coach = {
-        5: 50,
-        10: 90,
-        15: 130,
+        1: 25,
+        5: 110,
+        10: 200,
 
     }
 

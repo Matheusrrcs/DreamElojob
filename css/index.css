@@ -492,6 +492,73 @@
    padding-bottom: 216px;
  }
 
+ .content-area-rd {
+   width: 100%;
+   height: auto;
+   background: url(../img/backgrounds/forma-rd.png) ;
+   background-position: center;
+   background-repeat: no-repeat;
+   position: relative;
+   background-size: contain;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding-top: 4.5rem;
+ }
+ 
+.content-area-rd .col-lg-5{
+  text-align: center;
+}
+.last-col-rd{
+  margin-bottom: 2rem;
+}
+
+ /* .content-area-rd .img-back {
+   width: 100%;
+   height: 30rem;
+
+   /* padding-bottom: 216px; */
+   /* background: url(../img/backgrounds/gwen.png  ) no-repeat scroll center bottom / 800px 500px; */
+
+   /* padding-bottom: 216px; */
+ /* }   */
+
+ .titulo-rd .divider-line{
+  margin: 10px 0 20px 0;
+ }
+ .titulo-rd h3 {
+   color: #fff;
+   font-weight: bold;
+   text-align: start;
+ }
+ .content-area-rd .row{
+ justify-content: space-between
+}
+.content-area-rd img{
+  margin: 1rem;
+}
+
+ .texto-rd p {
+   color: #fff;
+   margin: 1rem 0;
+   text-align: start;
+ }
+
+ .texto-rd p::before{
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 12px 12px 12px;
+  border-color: transparent transparent #07b9df transparent;
+  margin-left: -28px;
+  margin-top: 9px;
+  transform: rotate(90deg);
+ }
+
+
  .detalhes::after {
    content: "";
    position: absolute;
@@ -986,17 +1053,13 @@
  }
 
  .modal {
-  top: 50%;
-  left: 50%;
-  height: auto;
- 
-  transform: translate(-50%,-50%);
-}
+   top: 50%;
+   left: 50%;
+   height: auto;
 
-.modal-backdrop.show {
-  opacity: 0.8 !important;}
+   transform: translate(-50%, -50%);
+ }
 
-
-
-  
- 
+ .modal-backdrop.show {
+   opacity: 0.8 !important;
+ }

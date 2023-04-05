@@ -16,7 +16,7 @@ $("#comprar").click((e) => {
 
     }
 
-    return false;
+     return false;
 })
 
 
@@ -166,7 +166,6 @@ console.log(ch);
         }
  
     }
-    
     text = window.encodeURIComponent(text);
     var url = `https://${type}.whatsapp.com/send?1=pt_BR&phone=5571987262223&text=`.concat(text);
 

@@ -1,47 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
 
-<url>
-  <loc>https://elojobdream.com/</loc>
-  <lastmod>2022-06-21T01:50:44+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://elojobdream.com/eloboost</loc>
-  <lastmod>2022-06-21T01:50:44+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://elojobdream.com/duoboost</loc>
-  <lastmod>2022-06-21T01:50:44+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://elojobdream.com/md5</loc>
-  <lastmod>2022-06-21T01:50:44+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://elojobdream.com/coach</loc>
-  <lastmod>2022-06-21T01:50:44+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://elojobdream.com/termos</loc>
-  <lastmod>2022-06-21T01:50:44+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://elojobdream.com/politicas</loc>
-  <lastmod>2022-06-21T01:50:44+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
+  <url>
+    <loc>https://elojobdream.com/</loc>
+    <lastmod>2023-07-23T17:09:21+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://elojobdream.com/eloboost</loc>
+    <lastmod>2023-07-23T17:09:21+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://elojobdream.com/duoboost</loc>
+    <lastmod>2023-07-23T17:09:21+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://elojobdream.com/md5</loc>
+    <lastmod>2023-07-23T17:09:21+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://elojobdream.com/coach</loc>
+    <lastmod>2023-07-23T17:09:21+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://elojobdream.com/eloboost-wildrift</loc>
+    <lastmod>2023-07-23T17:09:21+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://elojobdream.com/duoboost-wildrift</loc>
+    <lastmod>2023-07-23T17:09:21+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://elojobdream.com/md5-wildrift</loc>
+    <lastmod>2023-07-23T17:09:21+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://elojobdream.com/coach-wildrift</loc>
+    <lastmod>2023-07-23T17:09:21+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://elojobdream.com/eloboost-valorant</loc>
+    <lastmod>2023-07-23T17:09:21+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://elojobdream.com/duoboost-valorant</loc>
+    <lastmod>2023-07-23T17:09:21+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://elojobdream.com/md5-valorant</loc>
+    <lastmod>2023-07-23T17:09:21+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://elojobdream.com/coach-valorant</loc>
+    <lastmod>2023-07-23T17:09:21+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://elojobdream.com/termos</loc>
+    <lastmod>2023-07-23T17:09:21+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://elojobdream.com/politicas</loc>
+    <lastmod>2023-07-23T17:09:21+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
 
 
 </urlset>

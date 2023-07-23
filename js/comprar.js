@@ -6,8 +6,8 @@ $("#comprar").click((e) => {
     .trim();
   gtag_report_conversion(window.location.href);
 
-  if (titles == "MD10" || titles == "MD5") {
-    md10();
+  if (titles == "MD5" || titles == "MD5") {
+    md5();
   } else if (titles == "COACH") {
     coach();
   } else {
@@ -270,7 +270,7 @@ function eloboostDuo() {
   window.open(url);
 }
 
-function md10() {
+function md5() {
   let titles = document
     .getElementById("title")
     .textContent.toLocaleLowerCase()

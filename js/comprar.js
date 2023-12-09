@@ -87,17 +87,17 @@ function eloboostDuo() {
 
   if (
     (lga.toLowerCase() == "mestre" ||
-      lga.toLowerCase() == "graomestre" ||
+      lga.toLowerCase() == "graoMestre" ||
       lga.toLowerCase() == "desafiante" ||
       lga.toLowerCase() == "radiante") &&
     (lgd.toLowerCase() == "mestre" ||
-      lgd.toLowerCase() == "graomestre" ||
+      lgd.toLowerCase() == "graoMestre" ||
       lgd.toLowerCase() == "desafiante" ||
       lgd.toLowerCase() == "radiante")
   ) {
-    if (lga.toLocaleLowerCase() == "graomestre") {
+    if (lga.toLocaleLowerCase() == "graoMestre") {
       lga = "Grão Mestre";
-    } else if (lgd.toLocaleLowerCase() == "graomestre") {
+    } else if (lgd.toLocaleLowerCase() == "graoMestre") {
       lgd = "Grão Mestre";
     }
 
@@ -132,13 +132,13 @@ function eloboostDuo() {
     }
   } else if (
     lgd.toLowerCase() == "mestre" ||
-    lgd.toLowerCase() == "graomestre" ||
+    lgd.toLowerCase() == "graoMestre" ||
     lgd.toLowerCase() == "desafiante" ||
     lgd.toLowerCase() == "radiante"
   ) {
-    if (lga.toLocaleLowerCase() == "graomestre") {
+    if (lga.toLocaleLowerCase() == "graoMestre") {
       lga = "Grão Mestre";
-    } else if (lgd.toLocaleLowerCase() == "graomestre") {
+    } else if (lgd.toLocaleLowerCase() == "graoMestre") {
       lgd = "Grão Mestre";
     }
 
@@ -177,13 +177,13 @@ function eloboostDuo() {
     }
   } else if (
     lga.toLowerCase() == "mestre" ||
-    lga.toLowerCase() == "graomestre" ||
+    lga.toLowerCase() == "graoMestre" ||
     lga.toLowerCase() == "desafiante" ||
     lga.toLowerCase() == "radiante"
   ) {
-    if (lga.toLocaleLowerCase() == "graomestre") {
+    if (lga.toLocaleLowerCase() == "graoMestre") {
       lga = "Grão Mestre";
-    } else if (lgd.toLocaleLowerCase() == "graomestre") {
+    } else if (lgd.toLocaleLowerCase() == "graoMestre") {
       lgd = "Grão Mestre";
     }
 
@@ -217,9 +217,9 @@ function eloboostDuo() {
         fd;
     }
   } else {
-    if (lga.toLocaleLowerCase() == "graomestre") {
+    if (lga.toLocaleLowerCase() == "graoMestre") {
       lga = "Grão Mestre";
-    } else if (lgd.toLocaleLowerCase() == "graomestre") {
+    } else if (lgd.toLocaleLowerCase() == "graoMestre") {
       lgd = "Grão Mestre";
     }
 
@@ -329,7 +329,7 @@ function md5() {
   } else {
     type = "api";
   }
-  if (lga.toLocaleLowerCase() == "graomestre") {
+  if (lga.toLocaleLowerCase() == "graoMestre") {
     lga = "Grão Mestre";
   }
 

@@ -263,7 +263,7 @@ function eloboostDuo() {
   }
   text = window.encodeURIComponent(text);
   var url =
-    `https://${type}.whatsapp.com/send?1=pt_BR&phone=5571987262223&text=`.concat(
+    `https://${type}.whatsapp.com/send?1=pt_BR&phone=557199545176&text=`.concat(
       text
     );
 
@@ -361,7 +361,7 @@ function md5() {
 
   text = window.encodeURIComponent(text);
   var url =
-    `https://${type}.whatsapp.com/send?1=pt_BR&phone=5571987262223&text=`.concat(
+    `https://${type}.whatsapp.com/send?1=pt_BR&phone=557199545176&text=`.concat(
       text
     );
 
@@ -432,7 +432,7 @@ function coach() {
   }
   text = window.encodeURIComponent(text);
   var url =
-    `https://${type}.whatsapp.com/send?1=pt_BR&phone=5571987262223&text=`.concat(
+    `https://${type}.whatsapp.com/send?1=pt_BR&phone=557199545176&text=`.concat(
       text
     );
 
